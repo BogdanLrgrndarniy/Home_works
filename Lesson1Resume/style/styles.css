@@ -1,5 +1,5 @@
 body {
-  background-image: url("/Home_works/Lesson1Resume/img/fon.jpg");
+  background-image: url("/Home_works/Lesson1Resume/img/fon.jpg");/*не обновляется сылка  */ 
   background-size: cover;
   background-attachment: fixed;
 }
