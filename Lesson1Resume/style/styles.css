@@ -1,5 +1,5 @@
 body {
-  background: rgb(3, 3, 53);
+  background-image: url("img/fon.jpg");
   background-size: cover;
   background-attachment: fixed;
 }
