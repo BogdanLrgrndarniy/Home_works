@@ -1,0 +1,41 @@
+body{
+  margin: 0;
+}
+
+.header{
+  color: white;
+  background:RGB(165,42,42);
+  text-align: center;
+}
+
+.mainImg{
+  text-align: center;
+}
+
+.pOne{
+text-align: center;
+font-size: 18px;
+}
+
+.emChangecolor{
+  color: RGB(30,30,255);
+}
+
+.collectionCars {
+  text-align: center;
+}
+
+.car{
+  border: dashed;
+}
+
+.spanChangecolor{
+  color: RGB(41,27,255);
+}
+
+.pageFooter{
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
