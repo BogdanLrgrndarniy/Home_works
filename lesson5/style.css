@@ -1,0 +1,99 @@
+html {
+  box-sizing: border-box;
+background-image: url("img/PICTURE.png");
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.l-wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.three-col-grid .grid-item {
+  /* width: 95px; */
+  height:100vh;
+}
+
+
+.three-col-grid .grid-item  {
+  width: 70px;
+}
+
+.three-col-grid::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.grid-item {
+ margin-left: 15px;
+ margin-right: 15px;
+  background: rgb(39,32,39);
+  float: left;
+} 
+
+.imgLogo {
+  position: absolute;
+  top: 130px;
+  right: 620px;
+   /* z-index: 2; */
+}
+
+
+.textLogo{
+  position: absolute;
+  top: 216px;
+  right: 593px;
+}
+
+.imgSeparator{
+  position: absolute;
+  top: 250px;
+  right: 559px;
+}
+
+.facebookImg{
+  position: absolute;
+  top: 265px;
+  right: 740px;
+}
+ 
+.TweterImg{
+  position: absolute;
+  top: 267px;
+  right: 695px;
+}
+
+.GoogleImg{
+  position: absolute;
+  top: 267px;
+  right: 640px;
+}
+
+.DribbleImg{
+  position: absolute;
+  top: 267px;
+  right: 600px;
+}
+
+.FooterText{
+  position: absolute;
+  top: 366px;
+  right: 540px;
+}
+
+@media screen and (min-device-width: 768px) {
+ 
+}
+
+ @media screen and (max-device-width: 767px) {
+  .imgLogo {
+    position: absolute;
+    top: 150px;
+    right: 300px;
+  }
+}
