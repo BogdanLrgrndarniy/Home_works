@@ -6,13 +6,13 @@
 body, h1, h2, h3, h4, p, a {
   margin: 0;
   font-weight: normal;
-  background: url("/lesson6/shopingList/img/2.jpg") no-repeat;
+  background: url("/Home_works/lesson6/shopingList/img/2.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .fon{
-  background: url("/lesson6/shopingList/img/1.jpg");
+  background: url("/Home_works/lesson6/shopingList/img/1.jpg");
   background-size: cover;
  margin-right: 20%;
  margin-left: 20%;
