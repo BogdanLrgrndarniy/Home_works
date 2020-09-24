@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding: 56px 245px 66px;
+  font-size: 0;
+}
+
+.horizontal {
+  display: inline-block;
+  width: 33.33%;
+  text-align: center;
+}
+
+.iconWrapper {
+  background-color: #2a69a6;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  line-height: 90px;
+  border-radius: 32px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 14px;
+  margin: 20px 0 20px 0;
+}
+
+p {
+  font-size: 14px;
+  display: inline-block;
+  margin: auto 40px;
+}
+
+#firstIcon {
+  background-color: white;
+}
+
+#firstIcon:hover {
+  border: 1px;
+  border-color: #2a69a6;
+  border-style: solid;
+}
