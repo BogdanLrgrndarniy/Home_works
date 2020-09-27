@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*{transition: all .1s ease-in;}
+
+.forecast:hover li{
+  opacity: 0.7;
+}
+
+.forecast li:hover {
+  opacity: 1;
+}
+body{
+  background-color:  rgb(43, 129, 172);
+}
+
+section{
+  position: fixed;
+  background-color:rgb(51, 153, 204);;
+ height: 96%;
+ width: 1340px;
+ margin: 0.9%;
+}
+
+h1{
+  padding-left: 21%;
+  padding-top: 2%;
+ color: white;
+}
+
+.weatherForecast{
+box-sizing: border-box;
+width: 800px;
+text-align: center;
+position: absolute; 
+ top: 25%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+margin-top: 10%;
+
+}
+
+ul li {
+  color: aliceblue;
+  list-style-type: none; /* Убираем маркеры */
+  height: 100px;
+ border: solid 3px white;
+ display: inline-block;
+ font-size: 20px;
+}
+
+p{
+  padding-top: 20px;
+}
+
+ul{
+  font-size: 0;
+}
+
+.cityLisbon{
+width: 48.5%;
+}
+
+.cityParis{
+  background-color: rgb(51,204,204);
+}
+
+.cityBelgrad{
+  background-color: rgb(153,102,153);
+}
+
+.cityUkraine{
+background-color: rgb(194,71,71);
+}
+
+.cityTelAviv{
+ background-color: rgb(226,103,74);
+}
+
+.cityCair {
+  background-color: rgb(255,204,102);
+}
+
+.cityNewYork {
+  background-color: rgb(153,204,153);
+}
+
+.cityNewDelphi{
+background-color: rgb(102,153,153);
+}
+
+.citysanFrancisco{
+  width: 48.5%;
+  background-color: rgb(204,102,153);
+}
+
+.cityTokyo{
+  background-color: rgb(51,153,102);
+}
+
+.citySydney{
+  width: 97.5%;
+  background-color: rgb(102,102,153);
+}
+
+
+
+.same{
+  width: 23.75%;
+}
+
+.sameCity{
+  width: 23.82%;
+}
+
+
+.threeSame{
+  width: 23.75%;
+}
+
+.wi-celsius{
+  font-size: 30px;
+  position: relative;
+  top: 5.5px;
+}
+
+i{
+  padding-left: 0.5%;
+}
+
+.icon{
+  font-size: 25px;
+  position: relative;
+  top: 2px;
+  padding-left: 1%;
+}
