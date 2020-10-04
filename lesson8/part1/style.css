@@ -11,10 +11,6 @@ body{
   background-color: rgb(176, 124, 247);
 }
 
-section{
-  height: 500px;
-}
-
 /* хеадер-заголовок */
 header{
   text-align: center;
@@ -31,7 +27,7 @@ h1{
 
 .headerParagraph{
   font-size: 17px;
-  padding-top: 30px;
+  padding: 30px;
 }
 
 /* головний контент */
@@ -43,74 +39,74 @@ display: flex;
 max-width: 1200px;
 }
 
-.img1{
+.imageFirst{
   background-image: url('images/img.jpg');
   width: 370px;
   height: 310px;
-  margin-left: 15px;
+  margin: 30px;
   box-shadow: 0px -100px 20px 0px rgba(0, 0, 0, 0.5) inset;
+  border-radius: 2%;
 }
 
 
-.img{
+.image{
   /* display: block; */
 width: 60px;
 height: 60px;
 background-color: rgba(0, 0, 0, 0.4);
-border-radius: 15%;
+/* border-radius: 15%; */
 font-size: 23px;
 text-align: center;
 margin: 30px 30px;
 }
 
-.img2{
+
+
+.imageSecond{
   background-image: url('images/img2.jpg');
+}
+
+.sameValues{
   width: 370px;
   height: 310px;
-  margin-left: 30px;
+  margin: 30px;
   border-radius: 2%;
   box-shadow: 0px -100px 20px 0px rgba(0, 0, 0, 0.5) inset;
 }
 
-.img3{
+.imageThird{
   background-image: url('images/img3.jpg');
-  width: 370px;
-  height: 310px;
-  margin-left: 30px;
-  border-radius: 2%;
-  box-shadow: 0px -100px 20px 0px rgba(0, 0, 0, 0.5) inset;
 }
 
 .text{
-margin-top: 110px;
+margin: 110px 0 0 20px;
 font-size: 22px;
-margin-left: 20px;
 border-radius: 2%;
 }
 
 .text2{
-  margin-top: 20px;
-  margin-left: 20px;
+  margin: 20px 0 0 20px;
   color: rgb(222, 221, 224);
 }
 
-div.img1:hover{
+div.imageFirst:hover{
 opacity: 0.8;
-border-radius: 10%;
-border: black 3px solid;
+/* border-radius: 10%;
+border: black 3px solid; */
+
 }
 
-div.img2:hover{
+div.imageSecond:hover{
   opacity: 0.8;
-  border-radius: 10%;
-  border: black 3px solid;
+  /* border-radius: 10%;
+  border: black 3px solid; */
   }
 
   
-  div.img3:hover{
+  div.imageThird:hover{
     opacity: 0.8;
-    border-radius: 10%;
-    border: black 3px solid;
+    /* border-radius: 10%;
+    border: black 3px solid; */
     }
     
 /* кнопка */
@@ -119,7 +115,7 @@ div.img2:hover{
   height: 55px;
   width: 200px;
   background-color:rgb(247, 43, 59);
-  margin-top: 50px;
+  margin: 50px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +123,7 @@ div.img2:hover{
 }
 
 .textButton{
-  padding-top: 20px;
+  padding: 20px;
 }
 
 div.button:hover{
