@@ -1,0 +1,161 @@
+@font-face{
+
+  font-family: 'Acrom-Regular';
+
+  src: url('/Home_works/lesson8/part2/fonts/Acrom-ExtraBold.woff2');
+
+  
+  }
+  
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  ;
+}
+
+
+
+header{
+  background-image: url("/Home_works/lesson8/part2/images/back-groundImages.png");
+  background-repeat: no-repeat;
+   height: 801px; 
+  /* background-size: 100% 100%; */
+  width: 1600px;
+  position: cover;
+}
+
+nav{
+text-align: right;
+margin:0 2% 0 0;
+padding-top: 22px;
+}
+
+.imageLogo{
+  float: left;
+  padding: 0 0 0 20px;
+}
+
+.textLogo{
+position: absolute;
+left: 50px;
+top: 80px;
+width: 80px;
+text-align: left;
+}
+
+.horizontalLine{
+  height: 1px;
+  color: rgb(190, 214, 47);
+  width: 45px;
+  border-radius: 2%;
+  border: 1px solid  rgb(190, 214, 47);
+  display: inline-block;
+position: relative;
+top: -20px;
+left: 68px;
+}
+
+ul li{
+  display: inline-block;
+  list-style-type: none;
+font-size: 17px;
+padding: 22px;
+}
+
+h1{
+  font-size: 65px;
+  margin: 193px 0px 0px 450px;
+  text-align:left;
+  font-family: 'Acrom-Regular';
+text-align: left;
+}
+
+.BorderLi{
+border: solid  1px rgb(190, 214, 47);
+padding: 4px 4px 6px;
+margin-left: 10px;
+}
+
+.searchSymbol{
+  padding-left: 30px;
+}
+
+/* квадратики для стилизации */
+
+.square{
+  height: 18px;
+  width: 18px;
+  background-color: rgb(141, 198, 63);
+  position: relative;
+}
+
+.squareWhite{
+height: 18px;
+width: 18px;
+background-color: white;
+position: relative;
+}
+
+.first{
+  top: 123px;
+left: 300px;
+}
+
+.second{
+  left: 1325px;
+  top: 150px;
+}
+
+.Green{
+  height: 18px;
+  width: 18px;
+  background-color: rgb(141, 198, 63);
+  position: relative;
+  top: 525px;
+  left: 160px;
+  }
+
+  .GreenSecond{
+    top: 535px;
+    left: 180px;
+  }
+
+  .greenThird{
+    left: 1350px;
+    top: -315px;
+  }
+
+  .greenFourth{
+    left: 1350px;  
+    top: 125px;
+  }
+
+  .greenFifth{
+    left: 1325px; 
+    top: 135px;
+  }
+  .verticalline{
+    height: 210px;
+    width: 6px;
+    background-color: rgb(141, 198, 63);
+    position: absolute;
+    left: 400px;
+    top: 300px;
+  }
+
+  /* слайдер */
+
+.slider{
+position: absolute;
+left: 460px;
+top: 275px;
+}
+
+.lastImage{
+  position: absolute;
+  left: 815px;
+  top: 720px;
+}
