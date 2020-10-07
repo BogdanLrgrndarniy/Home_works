@@ -1,0 +1,175 @@
+@font-face{
+
+  font-family: 'Miso-Regular';
+
+  font-family: 'Miso-Bold';
+
+  src: url('/lesson9/fonts/miso.otf');
+
+  src: url('/lesson9/fonts/miso-bold.ttf');
+  
+  }
+
+  *{
+    padding: 0;
+    margin: 0;
+    font-family: 'Miso-Bold';
+  }
+
+  @media (min-width: 600px){
+    .container{
+display: flex;
+/* align-items: flex-start; */
+/* align-items: flex-end; */
+flex-direction: row;
+align-items: stretch;
+    }
+  }
+
+  .wrapper{
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   background-color: rgb(253, 222, 126);
+  }
+
+  .block_row{
+    display: flex;
+    /* border: 20px solid black; */
+    margin: 25px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+ 
+  .block_column{
+    border: 20px solid rgb(253, 222, 126);;
+  }
+
+  .block_item{
+    background-color: white;
+    padding: 150px;
+    width: 50px;
+    border-radius: 1%;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
+    font-size: 50px;
+  }
+  
+  .first{
+height: 400px;
+  }
+
+  .second{
+    height: 500px;
+  }
+
+  .third{
+    height: 400px;
+  }
+
+/* елементы флексбокса */
+
+
+h1{
+  color: rgb(2, 153, 91);
+ box-sizing: border-box;
+display: inline-block;
+margin-left: -10px;
+position: relative;
+top: -100px
+}
+
+img{
+ margin-left: -10px;
+display: inline-block;
+box-sizing: border-box;
+position: relative;
+}
+
+p{
+ font-size: 60px;
+ position: relative;
+ right: 60px;
+ bottom: 80px;
+ /* margin-top: 30px; */
+ font-family: Miso-Regular;
+}
+
+span{
+left: 45px;
+position: relative;
+font-family: Miso-Regular;
+}
+
+  .smoke{
+    left: 5px;
+    bottom: 50px;
+    height: 60px;
+  }
+
+  .cup{
+    right: 40px;;
+    height: 100px;
+    bottom: 50px;
+  }
+
+  .bean{
+    bottom: 140px;
+    left: 17px;
+    height: 50px;
+  }
+
+  .cost_coffee{
+    font-size: 25px;
+    width: 200px;
+    opacity: 0.7;
+    position: relative;
+    left: -60px;
+    margin-top: 30px;
+  }
+
+  .Silver{
+    position: relative;
+    right:45px;
+  }
+
+  .cupYellow{
+    height: 100px;
+    top: 2px;
+    right: 40px;
+  }
+
+  .smokeYellow{
+    bottom: -1px;
+    position: relative;
+    height: 60px;
+    left: 5px;
+  }
+
+  .bean2{
+    bottom: 90px;
+    left: 20px;
+    height: 50px;
+  }
+
+  .cost_coffeeCold{
+    font-size: 25px;
+    width: 200px;
+    opacity: 0.7;
+    position: relative;
+    left: -60px;
+    margin-top: 80px;
+  }
+
+  .gold{
+    top: -30px;
+    right: 40px;;
+  }
+
+  /* аннимация */
+
+  .block_column:hover{
+opacity: 0.8;
+  } 
+
+  
