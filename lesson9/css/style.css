@@ -4,172 +4,98 @@
 
   font-family: 'Miso-Bold';
 
-  src: url('/lesson9/fonts/miso.otf');
+  src: url('/Home_works/lesson9/fonts/miso.otf');
 
-  src: url('/lesson9/fonts/miso-bold.ttf');
+  src: url('/Home_works/lesson9/fonts/miso-bold.ttf');
+
+  font-weight: bold;
   
   }
 
-  *{
-    padding: 0;
-    margin: 0;
-    font-family: 'Miso-Bold';
-  }
-
-  @media (min-width: 600px){
-    .container{
-display: flex;
-/* align-items: flex-start; */
-/* align-items: flex-end; */
-flex-direction: row;
-align-items: stretch;
-    }
-  }
-
-  .wrapper{
-   height: 100%;
-   overflow: hidden;
-   min-height: 100%;
-   background-color: rgb(253, 222, 126);
-  }
-
-  .block_row{
-    display: flex;
-    /* border: 20px solid black; */
-    margin: 25px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
- 
-  .block_column{
-    border: 20px solid rgb(253, 222, 126);;
-  }
-
-  .block_item{
-    background-color: white;
-    padding: 150px;
-    width: 50px;
-    border-radius: 1%;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.5);
-    font-size: 50px;
-  }
-  
-  .first{
-height: 400px;
-  }
-
-  .second{
-    height: 500px;
-  }
-
-  .third{
-    height: 400px;
-  }
-
-/* елементы флексбокса */
-
-
-h1{
-  color: rgb(2, 153, 91);
- box-sizing: border-box;
-display: inline-block;
-margin-left: -10px;
-position: relative;
-top: -100px
-}
-
-img{
- margin-left: -10px;
-display: inline-block;
-box-sizing: border-box;
-position: relative;
-}
-
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
 p{
- font-size: 60px;
- position: relative;
- right: 60px;
- bottom: 80px;
- /* margin-top: 30px; */
- font-family: Miso-Regular;
+  text-align: center;
 }
 
-span{
-left: 45px;
-position: relative;
-font-family: Miso-Regular;
+.vertical {
+  padding: 50px 0;
+  background-color: #FDDE7E;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-family: miso-bold;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+}
+.verticla_body {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.vertical_row {
+  display: flex;
+}
+.vertical_column {
+  flex: 0 1 33.333%;
+  display: flex;
+  padding: 0px 15px;
+ 
 }
 
-  .smoke{
-    left: 5px;
-    bottom: 50px;
-    height: 60px;
-  }
+.vertical_item {
+  background-color: white;
+  color: #333333;
+  border-radius: 5px;
+  border: 1px solid #445162;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  .cup{
-    right: 40px;;
-    height: 100px;
-    bottom: 50px;
-  }
+.vertical_dollar{
+font-size: 70px;
+font-family:'miso-bold';
+text-align: center;
+padding: 40px 150px 0px 150px;
+color: #02995B;
+}
 
-  .bean{
-    bottom: 140px;
-    left: 17px;
-    height: 50px;
-  }
-
-  .cost_coffee{
-    font-size: 25px;
-    width: 200px;
-    opacity: 0.7;
-    position: relative;
-    left: -60px;
-    margin-top: 30px;
-  }
-
-  .Silver{
-    position: relative;
-    right:45px;
-  }
-
-  .cupYellow{
-    height: 100px;
-    top: 2px;
-    right: 40px;
-  }
-
-  .smokeYellow{
-    bottom: -1px;
-    position: relative;
-    height: 60px;
-    left: 5px;
-  }
-
-  .bean2{
-    bottom: 90px;
-    left: 20px;
-    height: 50px;
-  }
-
-  .cost_coffeeCold{
-    font-size: 25px;
-    width: 200px;
-    opacity: 0.7;
-    position: relative;
-    left: -60px;
-    margin-top: 80px;
-  }
-
-  .gold{
-    top: -30px;
-    right: 40px;;
-  }
-
-  /* аннимация */
-
-  .block_column:hover{
-opacity: 0.8;
-  } 
-
-  
+.dollar{
+  padding-right: 97.5px; 
+  position: relative;
+  right: 20px;
+}
+.vertical_smoke {
+  margin: 20px 0px 10px 0px;
+}
+.vertical_cupofcoffee {
+}
+.vertical_text {
+  font-size: 50px;
+  color: #333333;
+  margin: 45px 0px 40px 0px;
+}
+.vertical_textCost {
+  font-size: 25px;
+  margin: 0px 0px 40px 0px;
+}
