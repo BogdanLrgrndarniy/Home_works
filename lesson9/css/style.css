@@ -58,8 +58,15 @@ p{
   flex: 0 1 33.333%;
   display: flex;
   padding: 0px 15px;
- 
+  height: 450px;
+  align-self:center;
 }
+
+.column{
+  height: 500px;
+}
+
+
 
 .vertical_item {
   background-color: white;
@@ -81,15 +88,14 @@ color: #02995B;
 }
 
 .dollar{
-  padding-right: 97.5px; 
+  padding-right: 107.44px; 
   position: relative;
   right: 20px;
 }
 .vertical_smoke {
   margin: 20px 0px 10px 0px;
 }
-.vertical_cupofcoffee {
-}
+
 .vertical_text {
   font-size: 50px;
   color: #333333;
@@ -99,3 +105,4 @@ color: #02995B;
   font-size: 25px;
   margin: 0px 0px 40px 0px;
 }
+
