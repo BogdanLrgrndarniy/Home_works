@@ -15,3 +15,128 @@ ul li{list-style:none;}
 img{vertical-align:top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
+
+@font-face{
+
+  font-family: 'HansKendrick-Regular';
+
+  src: url('/Home_works/lesson9/part2/fonts/HansKendrick-Regular.otf');
+
+  font-weight: bold;
+  
+  }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #E2E7EC;
+  font-family: HansKendrick-Regular;
+}
+
+.content{
+flex: 1 1 auto;
+}
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 90px 0px 0px 0px;
+}
+.img_body {
+  display: flex;
+  align-items:stretch;
+  flex-wrap:wrap;
+}
+
+.img_column{
+  display: flex;
+
+}
+.column{
+  padding: 0px 0px 0px 20px;
+}
+.img_redCar {
+}
+.img_textredCar {
+}
+.img_fall {
+
+}
+.img_item{
+display: flex;
+flex-direction: column;
+background-color: white;
+}
+
+.img_fallText {
+  flex: 1 1 auto;
+  font-size: 13px;
+  opacity: 0.8;
+  color: #818181;
+  max-width: 316px;
+  margin: 25px 0px 0px 25px;
+}
+
+.img_description{
+  font-size: 22px;
+  line-height: 30px;
+  color: black;
+  text-transform: uppercase;
+  padding: 20px 0px 0px 0px;
+}
+
+
+.icon{
+flex: 0 0 55px;
+padding: 0px 0px 30px 30px;
+}
+
+/* вторая часть флекс елементов */
+
+.img_bodyTwo{
+  display: flex;
+  max-width: 1120px;
+  margin: 0px 0px 0px 0px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.vertical{
+/* flex: 0 1 33.333%; */
+margin:20px 20px 0px 0px;
+height: 540px;
+}
+
+.old_whiteCar{
+ margin-right: 0;
+}
+.description{
+  margin: 10px 0px 0px 0px;
+}
+
+/* подвал странички */
+
+.footer{
+}
+
+.container_footer{
+  padding: 0;
+}
+
+.footer_column{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height: 200px;
+
+}
+
+.footer_img{
+flex: 0 0 40px;
+}
+
+.footer_text{
+  color: #8996A3;
+  font-size: 13px;
+}
