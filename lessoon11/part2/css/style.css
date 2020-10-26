@@ -1,0 +1,180 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+@font-face {
+  font-family: 'MuseoSansRounded';
+src: url('/Home_works/lessoon11/part2/fonts/MuseoSansRounded-100.ttf');
+}
+
+
+* {
+  box-sizing: border-box;
+}
+.wrapper{
+  background-image: url('/Home_works/lessoon11/part2/img/main-bg.png');
+min-height: 100%;
+overflow: hidden;
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-family: 'MuseoSansRounded';
+}
+
+.purchaseCard {
+  display: flex;
+}
+
+.purchaseCardSneakers {
+
+  background-color: #152335;
+height: 400px;
+width: 700px;
+/* margin: 0 auto; */
+border-radius: 3%;
+}
+
+.purchaseCardSneakersp-logo{
+  padding: 25px 0px 0px 25px;
+}
+
+.sneakerSpecifications{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.SelectingProductFeatures {
+padding: 70px 0px 0px 0px;
+}
+.colorChoiceForSneakers {
+}
+.colorChoiceForSneakers__Sneakers {
+  height: 250px;
+  flex-direction: column;
+  display: flex;
+  /* align-items: flex-end; */
+  justify-content: space-between;
+}
+
+.colorChoiceForSneakers__colorselection{
+display: flex;
+/* align-items: center; */
+justify-content: center;
+}
+
+.colorChoiceForSneakers__colorselection ul{
+  display: flex;
+  justify-content: space-evenly;
+  width: 90px;
+}
+.colorSelection {
+
+  background-color: red;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+}
+
+.colorSelection:first-child {
+ background-color: #293550;
+}
+.colorSelection:last-child {
+  background-color: #24E7EE;
+}
+
+.white{
+  background-color: white;
+}
+
+.red {
+  background-color: #F34B41;
+}
+
+ul li:hover {
+  border: 2px solid grey;
+}
+
+.choosingSneakerProperties {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 40px; 
+}
+.productNames {
+  color: white;
+  font-size: 24px;
+}
+.productText {
+  font-size: 14px;
+  opacity: 0.5;
+  color: white;
+  padding-top: 15px;
+}
+
+.stars {
+}
+.buttonsToSelect {
+  display: flex;
+  opacity: 0.5;
+}
+.buttonSize {
+  width: 67px;
+  height: 30px;
+  border: 1px solid #616873;
+  background-color: #152335;
+  color: white;
+}
+.buttonQty {
+  width: 67px;
+  height: 30px;
+  border: 1px solid #616873;
+  margin: 0px 0px 0px 2px;
+  background-color: #152335;
+  color: white;
+}
+
+.addToCart button {
+  height: 38px;
+  width: 182px;
+  border: 1px solid #616873;
+  background-color: #152335;
+  opacity: 0.5;
+}
+
+.addToCart a{
+  color: white;
+}
+
+.addToCart button:active {
+  border: 2px solid white;
+}
+
+.badge {
+   margin: 6px 0px 0px 6px;
+}
+
+.product-card__select {
+  opacity: 0;
+position: absolute;
+  border: 1px solid #7e838b;
+  background: #111a28;
+  color: #fff;
+}

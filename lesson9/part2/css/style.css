@@ -51,7 +51,7 @@ flex: 1 1 auto;
 
 .img_column{
   display: flex;
-
+  height: 540px;
 }
 .column{
   padding: 0px 0px 0px 20px;

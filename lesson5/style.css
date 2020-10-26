@@ -47,7 +47,12 @@ background-image: url("img/PICTURE.png");
 .textLogo{
   position: absolute;
   top: 216px;
-  right: 593px;
+ left: 60px;
+}
+
+.textLogos{
+  position: absolute;
+  left: 60px;
 }
 
 .imgSeparator{

@@ -11,73 +11,137 @@
 *{
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   color: white;
-  ;
 }
-
-
 
 header{
-  background-image: url("/Home_works/lesson8/part2/images/back-groundImages.png");
-  background-repeat: no-repeat;
-   height: 801px; 
-  /* background-size: 100% 100%; */
-  width: 1600px;
-  position: cover;
+  max-width: 1600px;
+  min-width: 600px;
 }
 
-nav{
-text-align: right;
-margin:0 2% 0 0;
-padding-top: 22px;
+
+.background{
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+.mask{
+  background-image: url('/Home_works/lesson8/part2/images/mask.png');
+  z-index: -1;
+  opacity: 70%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  position: relative;
+  top: -80px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  color: #e9ecec;
+}
+
+li {
+  display: inline;
+  margin: 0 20px;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+ul {
+  float: right;
+  font-size: 0;
+}
+
+.lang {
+  position: relative;
+  box-sizing: border-box;
+  float: right;
+  margin: 0 20px;
+  border: solid 1px #bfd730;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  top: -5px;
+  padding-top: 4px;
+}
+
+.lang:hover {
+  cursor: pointer;
+}
+
+.search {
+  float: right;
+  margin: 2px 30px 0 20px;
+  color: #bfd730;
+}
+
+a {
+  color: #bfd730;
+}
+
+section {
+  position: absolute;
+  box-sizing: border-box;
+  width: 560px;
+  height: 200px;
+  top: 35%;
+  left: 25%;
+  border-left: solid 6px #bfd730;
+  font-family: "Acrom";
+  padding-top: 5px;
+  padding-left: 50px;
+}
+
+p {
+  font-size: 23px;
+  font-weight: 300;
+  color: white;
+}
+span {
+  font-size: 14px;
+  font-family: "Acrom";
+  font-weight: 300;
+}
+
+span.grn {
+  color: #bfd730;
+  font-size: 23px;
+}
+
+h1 {
+  font-size: 50px;
+  color: #ffffff;
+  margin-top: 30px;
 }
 
 .imageLogo{
-  float: left;
-  padding: 0 0 0 20px;
+  position: relative;
+  width: 117px;
+  top: 20px;
+  left: 30px;;
 }
 
 .textLogo{
-position: absolute;
-left: 50px;
-top: 80px;
-width: 80px;
-text-align: left;
+  position: relative;
+  top: 20px;
+  left: 60px;
+  width: 90px;
+  height: 50px;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #e9ecec;
 }
 
-.horizontalLine{
-  height: 1px;
-  color: rgb(190, 214, 47);
-  width: 45px;
-  border-radius: 2%;
-  border: 1px solid  rgb(190, 214, 47);
-  display: inline-block;
-position: relative;
-top: -20px;
-left: 68px;
-}
-
-ul li{
-  display: inline-block;
-  list-style-type: none;
-font-size: 17px;
-padding: 22px;
-}
-
-h1{
-  font-size: 65px;
-  margin: 193px 0px 0px 450px;
-  text-align:left;
-  font-family: 'Acrom-Regular';
-text-align: left;
-}
-
-.BorderLi{
-border: solid  1px rgb(190, 214, 47);
-padding: 4px 4px 6px;
-margin-left: 10px;
-}
 
 .searchSymbol{
   padding-left: 30px;
@@ -85,77 +149,66 @@ margin-left: 10px;
 
 /* квадратики для стилизации */
 
+.box {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+}
+
+
 .square{
-  height: 18px;
-  width: 18px;
   background-color: rgb(141, 198, 63);
-  position: relative;
 }
 
 .squareWhite{
-height: 18px;
-width: 18px;
 background-color: white;
-position: relative;
 }
 
 .first{
-  top: 123px;
-left: 300px;
+  left: 250px;
+  top: 180px;
 }
 
 .second{
-  left: 1325px;
-  top: 150px;
+  right: 230px;
+  bottom: 85px;
 }
 
 .Green{
-  height: 18px;
-  width: 18px;
-  background-color: rgb(141, 198, 63);
-  position: relative;
-  top: 525px;
-  left: 160px;
+  left: 200px;
+  bottom: 90px;
   }
 
   .GreenSecond{
-    top: 535px;
-    left: 180px;
+    left: 185px;
+  bottom: 110px;
   }
 
   .greenThird{
-    left: 1350px;
-    top: -315px;
+    right: 200px;
+    bottom: 130px;
   }
 
   .greenFourth{
-    left: 1350px;  
-    top: 125px;
+    right: 230px;
+  bottom: 110px;
   }
 
   .greenFifth{
-    left: 1325px; 
-    top: 135px;
-  }
-  .verticalline{
-    height: 210px;
-    width: 6px;
-    background-color: rgb(141, 198, 63);
-    position: absolute;
-    left: 400px;
-    top: 300px;
+    right: 250px;
+    top: 150px;
   }
 
   /* слайдер */
 
-.slider{
+/* .slider{
 position: absolute;
 left: 460px;
-top: 275px;
+top: 200px;
 }
 
 .lastImage{
   position: absolute;
   left: 815px;
-  top: 720px;
-}
+  top: 550px;
+} */
