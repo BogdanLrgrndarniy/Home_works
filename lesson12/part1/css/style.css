@@ -1,0 +1,262 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+/* шрифты */
+@font-face{
+  font-family: 'Raleway-Bold';
+src: url('/Home_works/lesson12/part1/font/Raleway-Bold.ttf');
+font-style: Bold;
+}
+
+@font-face{
+  font-family: 'Raleway-Light';
+src: url('/Home_works/lesson12/part1/font/Raleway-Light.ttf');
+font-style: Light;
+}
+
+@font-face{
+  font-family: 'Pacifico-Regular';
+src: url('/Home_works/lesson12/part1/font/Pacifico-Regular/Pacifico-Regular.ttf');
+font-style: Regular;
+}
+/* шрифты */
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.wrapperFooter {
+  width: 100%;
+  min-height: 100%;
+  background-image: url('/Home_works/lesson12/part1/img/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  height: 100% ;
+  display: flex;
+  flex-direction: column;
+overflow: scroll;
+}
+footer{
+  max-width: 1500px;
+  width: 100%;
+  min-height: 1000px;
+  flex: 1 1 auto;
+
+}
+
+ .footerTextContact {
+  max-width: 370px;
+  margin: 0 auto;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  margin-top: 5%;
+ }
+
+.footer__title {
+  font-size: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway-Bold';
+  line-height: 25px;
+
+}
+.footer__text {
+  font-size: 17px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Raleway-Light';
+  line-height: 25px;
+}
+
+.footer__text p{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+ padding-top: 1%;
+}
+
+/* ///// */
+
+.form{
+max-width: 1170px;
+margin-top: 2%;
+display: flex;
+flex-direction: column;
+}
+
+.footerForm {
+  max-width: 985px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.formElement{
+  width: 500px;
+ margin: 0;
+
+}
+
+.form .elementForm{
+  padding-top: 3%;
+}
+
+.form .elementForm:first-child{
+  padding-top: 0;
+}
+
+.elementForm input {
+  width: 500px;
+  height: 50px;
+  background-color: #77dbdc;
+  padding-left: 20px;
+}
+
+.elementForm textarea {
+  width: 500px;
+  height: 250px;
+  background-color: #77dbdc;
+  padding-left: 20px;
+  padding-top: 3%;
+}
+
+.elementForm{
+  opacity: 0.8;
+}
+
+ .elementForm > button{
+  width: 240px;
+height: 40px;
+background-color: black;
+color: white;
+font-size: 30px;
+}
+
+.elementForm > button:hover{
+  border: 3px solid white;
+  opacity: 1;
+  background-color: teal;
+  transition: 0.1s;
+}
+
+.elementForm input::placeholder, .elementForm textarea::placeholder{
+  padding: 0px 0px 0px 1%;
+  font-size: 15px;
+  color: white;
+  opacity: 1;
+}
+
+.elementForm input::-webkit-input-placeholder, .elementForm textarea::-webkit-input-placeholder {
+  color: #ffffff; /*Change the placeholder color*/
+  opacity: 1; /*Change the opacity between 0 and 1*/
+  font-family: 'Raleway-Light';
+}
+
+.elementForm input:focus {
+  background-color: #00C4C4;
+  border-left: 5px solid #355b82;
+}
+
+
+.elementForm textarea:focus{
+  background-color: #00C4C4;
+border-left: 5px solid #355b82;
+}
+
+/* размер шрифта для инпута */
+input[type~="text"], input[type~="email"], input[type~="tel"], textarea
+{
+  font-size: 15px;
+}
+
+/* контакты компании */
+
+.companyContacts{
+width: 315px;
+margin: 0;
+}
+.companyContactsInformation  div {
+  font-size: 17px;
+  font-family: 'Raleway-Bold';
+padding-top: 5%;
+}
+.companyContactsInformation div:first-child{
+padding-top: 0;
+}
+.companyContactsInformation__address  p, .companyContactsInformation__email p, .companyContactsInformation__phone p{
+  font-family: 'Raleway-Light';
+  padding-top: 2%;
+}
+
+
+/* подвал футера */ 
+
+.footerBottom {
+  background-color: #262626;
+  margin: 0;
+  height: 90px;
+  display: flex;
+ 
+}
+
+.footerBottomElement{
+display: flex;
+ width: 1170px;
+color: white;
+opacity: 0.5;
+justify-content: space-between;
+}
+
+.footerBottom__LicenseText{
+  font-size: 16px;
+  line-height: 25px;
+
+font-family: 'Raleway-Light';
+}
+
+.footerBottom__Logo, .footerBottom__creatorText, .footerBottom__LicenseText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+.footerBottom__Logo{
+  font-family: 'Pacifico-Regular';
+  font-size: 25px;
+}
+.footerBottom__creatorText {
+  line-height: 25px;
+font-size: 15px;
+font-family: 'Raleway-Light';
+}
+
+.footerBottom__creatorText p>span{
+color: #ff2b58;
+font-size: 15px;
+font-family: 'Raleway-Bold';
+opacity: 1;
+}
