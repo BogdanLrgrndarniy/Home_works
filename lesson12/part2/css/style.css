@@ -1,0 +1,283 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+@font-face{
+  font-family: 'Quicksand';
+
+  src: url('/Home_works/lesson12/part2/fonts/Quicksand-Bold.ttf');
+
+  font-style: Bold;
+}
+
+@font-face{
+  font-family: 'Quicksand-Regular';
+
+  src: url('/Home_works/lesson12/part2/fonts/Quicksand-Regular.ttf');
+
+  font-style: Regular;
+}
+/* переключения форм */
+.tab-form{
+  display: none;
+}
+
+.tab-form.active,
+#tab-1:checked ~ #form-1,
+#tab-2:checked ~ #form-2 {
+ display: block;
+ 
+}
+
+
+/* переключения форм */
+.wrapper{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/Home_works/lesson12/part2/img/body.png');
+  background-repeat: no-repeat;
+  min-height: 100%;
+  background-position: center;
+}
+
+.dws-form{
+/* display: flex; */
+margin: 0px 0px 30px 0px;
+height: 395px;
+width: 262px;
+/* flex-direction: column; */
+justify-content: space-between;
+
+}
+
+.tab{
+width: 150px;
+font-size: 18px;
+margin: 0px 0px 0px 25px;
+justify-content: space-between;
+color: white;
+font-family: 'Quicksand';
+font-style: Bold;
+line-height: auto;
+
+height: 7%;
+}
+.tab1{
+  margin: 0px 0px 0px 0px;
+}
+
+input[name="tabs"] {
+  display: none;
+
+ }
+
+.tab{
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+input[name="tabs"]:checked + label {
+opacity: 1;
+color: white;
+border-bottom: #E66E64 solid 2px;
+transition: 0.2s;
+}
+
+input[name="tabs"]:hover + label {
+  cursor: pointer;
+}
+
+
+
+
+/* 
+ елементы формы */
+
+ form{
+   height: 321px;
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-E; */
+ }
+
+ .formUsername >.formUsername__Username>input, .formUserPassword>.formUserPassword__Password >input {
+width: 100%;
+height: 38px;
+background-color: transparent;
+opacity: 1;
+padding-left: 5px;
+font-size: 15px;
+font-family: 'Quicksand';
+font-style: Bold;
+}
+
+
+.formUsername >.formUsername__Username, .formUserPassword >.formUserPassword__Password {
+  border: 2px solid white;
+  width: 100%;
+height: 38px;
+opacity: 0.9;
+} 
+
+.formUsername{
+  margin-bottom: 1.7%;
+}
+
+.formUserPassword{
+  margin-top: 2.8%;
+}
+
+.formUserPassword >p, .formUsername >p {
+  margin-top: 1.7%;
+  margin-bottom: 2.8%;
+  color: white;
+  font-size: 16px;
+  font-family: 'Quicksand';
+font-style: Bold;
+letter-spacing: 1.5px;
+
+}
+
+.formUsername >p {
+  margin-top: 50px;
+}
+
+
+/* стилизация чекбокса */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  
+}
+
+.form__checkbox{
+  margin-top: 6.5%;
+  color: white;
+  font-size: 13px;
+  font-family: 'Quicksand';
+  font-style: Bold;
+margin-bottom: 6.85%;
+}
+
+
+.form__checkbox>label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  letter-spacing: 1.5px;
+}
+
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 1.3em;
+  height: 1.3em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  /* border-radius: 0.25em; */
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+  border-color: #23ae92;
+  background-color: #23ae92;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: #b3d7ff;
+}
+/* стили для активного состояния чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+/* стили для чекбокса, находящегося в фокусе */
+.custom-checkbox:focus+label::before {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: #80bdff;
+}
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: #e9ecef;
+}
+
+
+/* кнопка входа формы */
+
+.form__signIn > button {
+margin-top: 6.85%;
+height: 42px;
+width: 100%;
+background-color: #23ae92;
+font-size: 18px;
+color: white;
+font-family: 'Quicksand';
+font-style: Bold;
+letter-spacing: 2px;
+}
+
+.form__signIn > button:hover{
+  border: 2px solid green;
+  transition: 0.1s;
+}
+
+.form__signIn > button:active{
+opacity:0.5 ;
+transition: 0.1s;
+}
+/* 
+bottom формы */
+
+.formBottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 38px;
+  font-size: 13px;
+  font-family: 'Quicksand-Regular';
+  letter-spacing: 0.5px;
+  color: white;
+  opacity: 0.5;
+}
+.form-ForgotPassword, .form-CreatanAccount {
+  border-bottom: 1px solid rgba(185, 204, 204, 0.2);
+height: 20px;
+}
+
+.form-ForgotPassword a, .form-CreatanAccount a {
+  color: white;
+}
+
+.form-ForgotPassword a:hover, .form-CreatanAccount a:hover{
+  color: tomato;
+  transition: 0.1s;
+}
+
+.form-ForgotPassword a:active, .form-CreatanAccount a:active{
+opacity: 0.5;
+transition: 0.1s;
+}
