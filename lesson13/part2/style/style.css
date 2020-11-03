@@ -1,0 +1,567 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+* {
+  box-sizing: border-box;
+}
+/* шрифты */
+@font-face{
+  font-family: lato-bold;
+
+  src: url('/Home_works/lesson13/part2/fonts/lato/latobold.ttf');
+
+  font-style: bold;
+}
+
+@font-face{
+  font-family: lato-regular;
+
+  src: url('/Home_works/lesson13/part2/fonts/lato/latoregular.ttf');
+
+  font-style: regular;
+}
+
+@font-face{
+  font-family: lato-light;
+
+  src: url('/Home_works/lesson13/part2/fonts/lato/latolight.ttf');
+
+  font-style: light;
+}
+/* шрифты */
+.section{
+height: 1075px;
+}
+
+.wrapper{
+min-height: 100%;
+/* height: 4685px;  */
+overflow: hidden;
+max-width: 100%;
+display: flex;
+flex-direction: column;
+} 
+
+.headerSite {
+  background-image: url('/Home_works/lesson13/part2/img/hero-bg.png');
+  /* background-position: center center; */
+  background-repeat: no-repeat;
+  /* background-size: cover; */
+  /* background-attachment: fixed; */
+/* max-height: 1070px; */
+background-size: 100% 100%;
+height: 100%;
+}
+
+.container{
+  /* width: 903px; */
+  max-width: 903px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.headerText{
+  width: 610px;
+  /* height: 690px; */
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+  align-items: center;
+  height: 766px;
+}
+
+.headerSite__Logo {
+  height: 80px;
+  width: 80px;
+  color: white;
+  padding-bottom: 100px;
+}
+.headerSite__TitleText {
+  font-size: 54px;
+  font-family: lato-bold;
+  letter-spacing: 8px;
+  padding-bottom: 50px;
+}
+.headerSite__Text {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  font-family: lato-regular;
+  flex: 1 1 auto;
+  padding-bottom: 250px;
+}
+.headerSite__Text p {
+  line-height: 29px;
+}
+
+.headerSite__Scroll > a.up:hover {
+    cursor: pointer;
+  }
+
+/* второй блок */
+
+.aboutUs {
+  height: 630px;
+}
+.aboutUs-Information {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 310px;
+  border: 2px solid black; 
+  border-top: none;
+  width: 100%;
+}
+
+ .aboutUs-Title {
+  font-size: 34px;
+  font-family: lato-bold;
+  letter-spacing: 8px;
+  position: absolute;
+top: 1209px;
+display: flex;
+}   
+
+.aboutUs-Title span{
+  position: relative;
+  top: 5px;
+}
+
+ 
+.aboutUs-Title::before{
+  display: block;                  
+    width:242px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top:70%;                        
+    right:327px;                    
+}
+
+.aboutUs-Title::after{
+  display: block;                  
+    width:242px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top:70%;                        
+    left:327px;                    
+}
+
+
+.aboutUs-Text {
+  font-size: 16px;
+  /* padding-top: 60px; */
+  line-height: 24px;
+  height: 204px;
+  font-family: lato-light;
+}
+
+.aboutUs-Text p {
+  margin-bottom: 30px;
+}
+
+/* третий блок */
+.section-3{
+  height: 490px;
+  color: white;
+}
+
+.services {
+
+  background-image: url('/Home_works/lesson13/part2/img/services.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100%;
+}
+.services-Information {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 260px;
+  border: 2px solid black; 
+  border-top: none;
+  width: 100%;
+}
+.services-Title {
+  font-size: 34px;
+  font-family: lato-bold;
+  position: absolute;
+top: 1800px;
+letter-spacing: 8px;
+
+}
+.services-Text {
+  font-size: 16px;
+  /* padding-top: 60px; */
+  line-height: 25.89px;
+  height: 150px;
+  font-family: lato-light;
+}
+
+.services-Title span{
+  position: relative;
+  top: 5px;
+}
+
+ 
+.services-Title::before{
+  display: block;                  
+    width:242px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top:60%;                        
+    right:316px;                    
+}
+
+.services-Title::after{
+  display: block;                  
+    width:242px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top:60%;                        
+    left:316px;                    
+}
+
+/* .section-4 */
+
+.section-4{
+height: 1415px;
+}
+
+.whatWeDo{
+
+}
+
+.whatWeDoContent {
+ text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+   align-items: center; 
+  height: 1178px;
+  border: 2px solid black; 
+  border-top: none;
+  width: 100%;
+}
+
+.whatWeDoContent__title{
+  font-size: 34px;
+  font-family: lato-bold;
+  position: absolute;
+top: 2290px;
+letter-spacing: 8px;
+}
+
+.whatWeDoContent__title span{
+  position: relative;
+  top: 5px;
+}
+
+ 
+.whatWeDoContent__title::before{
+  display: block;                  
+    width:242px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top: 70%;
+    right:361px;                    
+}
+
+.whatWeDoContent__title::after{
+  display: block;                  
+    width:242px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top:70%;                        
+    left:361px;                    
+}
+
+
+.whatWeDoContent-Element{
+  display: flex;
+  flex-direction: column;
+  height: 980px;
+  justify-content: space-between;
+}
+
+
+.whatWeDoContent-Design, .whatWeDoContent-ProductManagement,.whatWeDoContent-Development {
+  max-width: 550px;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.whatWeDoContent-Design img, .whatWeDoContent-ProductManagement img,.whatWeDoContent-Development img {
+  width: 80px;
+  height: 80px;
+}
+
+
+.whatWeDoContent-Element__title {
+  font-size: 20px;
+  font-family: lato-bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.whatWeDoContent-Element__text {
+  font-size: 14px;
+  line-height: 25.89px;
+  font-family: lato-light;
+}
+ 
+/* section-5 Bootstrap columns */
+
+.section-5 {
+
+display: flex;
+justify-content: center;
+height: 420px;
+}
+.container5{
+
+max-width: 1366px;
+}
+.row, .row-2 {
+  display: flex;
+}
+.col-sm img, .col-sm2 img, .col-sm3 img, .col-sm4 img, .col-sm5 img, .col-sm6 img{
+max-width: 100%;
+}
+
+
+
+.col-sm__Text, .col-sm__Text2{
+text-transform: uppercase;
+font-size: 34px;
+color: white;
+position: absolute;
+font-family: lato-bold;
+height: 235px;
+display: flex;
+align-items: flex-end;
+padding: 0px 0px 40px 25px;
+}
+
+.col-sm, .col-sm2, .col-sm3 {
+  margin-bottom: 9px;
+}
+
+.col-sm, .col-sm4{
+  margin-right: 10px;
+}
+
+.col-sm3, .col-sm6{
+  margin-left: 10px;
+}
+
+.col-sm {
+  background-image: url('/Home_works/lesson13/part2/img/section-5/image1.png');
+  width: 550px; ;
+  height: 235px;
+}
+.col-sm2 {
+  background-image: url('/Home_works/lesson13/part2/img/section-5/image2.png');
+  width: 801px; ;
+  height: 235px;
+}
+.col-sm3 {
+  background-image: url('/Home_works/lesson13/part2/img/section-5/image3.png');
+  width: 550px; ;
+  height: 235px;
+  background-size: 100%;
+}
+.col-sm4 {
+  background-image: url('/Home_works/lesson13/part2/img/section-5/image4.png');
+  width: 550px; ;
+  height: 235px;
+}
+
+.col-sm5 {
+  background-image: url('/Home_works/lesson13/part2/img/section-5/image5.png');
+  width: 801px; ;
+  height: 235px;
+}
+.col-sm6 {
+  background-image: url('/Home_works/lesson13/part2/img/section-5/image6.png');
+  width: 550px; ;
+  height: 235px;
+}
+
+@media (max-width:1600px) {
+  .col-sm {
+    background-image: url('/Home_works/lesson13/part2/img/section-5/image1.png');
+    width: 250px;
+    height: 150px;
+  }
+  .col-sm2 {
+    background-image: url('/Home_works/lesson13/part2/img/section-5/image2.png');
+    width: 400px; ;
+    height: 150px;
+  }
+  .col-sm3 {
+    background-image: url('/Home_works/lesson13/part2/img/section-5/image3.png');
+    width: 250px;
+    height: 150px;
+    background-size: 100%;
+  }
+  .col-sm4 {
+    background-image: url('/Home_works/lesson13/part2/img/section-5/image4.png');
+    width: 250px;
+    height: 150px;
+  }
+  
+  .col-sm5 {
+    background-image: url('/Home_works/lesson13/part2/img/section-5/image5.png');
+    width: 400px; 
+    height: 150px;
+  }
+  .col-sm6 {
+    background-image: url('/Home_works/lesson13/part2/img/section-5/image6.png');
+    width: 250px; 
+    height: 150px;
+  }
+  .col-sm__Text, .col-sm__Text2{
+    height: 150px;
+    font-size: 25px;
+    padding: 0px 0px 20px 12px;;
+  }
+
+}
+/* section-6 */
+
+.section-6 {
+  height: 590px;
+}
+.contactUs {
+  height: 100%;
+}
+.contactUs-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+   align-items: center; 
+  height: 290px;
+  border: 2px solid black; 
+  border-top: none;
+  width: 100%;
+}
+.contactUs-Title {
+  font-size: 34px;
+  font-family: lato-bold;
+  position: absolute;
+top: 4070px;
+letter-spacing: 8px;
+}
+.contactUs-Text {
+  max-width: 560px;
+  font-size: 16px;
+  line-height: 25.89px;
+  font-family: lato-light;
+}
+
+.contactUs-button{
+  margin: 45px 0px 0px 0px;
+}
+
+.contactUs-button button {
+  height: 60px;
+  width: 400px;
+  background-color: #393939;
+  font-size: 16px;
+  color: white;
+  letter-spacing: 5px;
+  font-family: lato-regular;
+}
+
+@media (min-width:1600px) {
+  .contactUs-Title {
+    top: 4250px;
+  }
+  .contactUs-Title::before{
+    display: block;                  
+    width:100px;                   
+      content: '';                     
+      position: absolute;              
+      border-bottom: 2px solid #000;   
+      top: 78%;
+      right:340px;                    
+  }
+  .section-5 {
+
+
+    height: 600px;
+    }
+}
+
+.contactUs-Title::before{
+  display: block;                  
+  width:236px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top: 78%;
+    right:361px;                    
+}
+
+.contactUs-Title::after{
+  display: block;                  
+    width:236px;                   
+    content: '';                     
+    position: absolute;              
+    border-bottom: 2px solid #000;   
+    top: 78%;                       
+    left:361px;                    
+}
+
+.allRightsReserved {
+display: flex;
+height: 167px;
+align-items: center;
+}
+.allRightsReserved__icon {
+  padding-right: 35px;
+}
+.allRightsReserved__text {
+  color: black;
+  font-size: 14px;
+  font-family: lato-regular;
+}
+
+.lastContainer{
+flex-direction: column;
+}
+
