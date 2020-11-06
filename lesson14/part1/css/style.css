@@ -1,0 +1,317 @@
+/*Обнуление*/
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+
+@font-face {
+font-family: Raleway-medium;
+src: url('/Home_works/lesson14/part1/fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+    font-family: Roboto-black;
+    src: url('/Home_works/lesson14/part1/fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: Roboto-black;
+    src: url('/Home_works/lesson14/part1/fonts/Roboto-Black.ttf');
+}
+
+@font-face {
+    font-family: Raleway-regular;
+    src: url('/Home_works/lesson14/part1/fonts/Raleway-Regular.ttf');
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex-direction: column;
+}
+.container {
+    text-align: center;
+}
+
+.carouselTitle h2 {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: Raleway-medium;
+    color: #898f8f;
+}
+.carouselTitle span {
+    font-size: 60px;
+    line-height: 66px;
+    color: #FFCC00;
+    font-family: Roboto-black;
+}
+.bonfireIcon span{
+    position: relative;
+}
+.bonfireIcon span::after {
+left: 30px;
+}
+
+.bonfireIcon span::before, .bonfireIcon span::after{
+    display: block;
+    content: '';
+    height: 1px;
+    width: 210px;
+    background-color: #FFCC00;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+.carousel {
+    margin-top: 40px;
+}
+
+.glyphicon-chevron-left:before {
+ content: url('/Home_works/lesson14/part1/img/angle\ left\ icon.png');
+}
+
+.glyphicon-chevron-right:before {
+    content: url('/Home_works/lesson14/part1/img/angle\ right\ icon.png');
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+
+.carousel-control.left {
+    background-image: none;
+}
+
+.imgCarousel {
+    height: 370px;
+    width: 370px;
+    border: 1px solid #FFCC00;
+    z-index: 3;
+}
+
+.imgCarousel img {
+    border: 1px solid #FFCC00;
+    margin: 2.5% 0 0 0;
+    z-index: 2;
+}
+
+/* .imgCarousel span::before {
+    content: '';
+    position: absolute;
+    width: 390PX;
+    height: 200px;
+    Z-INDEX: -1;
+    BACKGROUND-COLOR: WHITE;
+    LEFT: 45PX;
+    TOP: 150PX;
+} */
+.imgCarousel span::before {
+    content: '';
+    position: absolute;
+    width: 390PX;
+    height: 200px;
+    Z-INDEX: -1;
+    BACKGROUND-COLOR: WHITE;
+    LEFT: 110PX;
+    TOP: 80PX;
+}
+/* 
+.imgCarousel span::after {
+    content: '';
+    position: absolute;
+    width: 200PX;
+    height: 390px;
+    Z-INDEX: -1;
+    BACKGROUND-COLOR: WHITE;
+    LEFT: 140PX;
+    TOP: 55PX;
+} */
+
+.imgCarousel span::after {content: '';
+position: absolute;
+width: 200PX;
+height: 400px;
+Z-INDEX: -1;
+BACKGROUND-COLOR: WHITE;
+top: -10px;
+LEFT: 205PX;}
+/* .carouselContainer .imgCarousel{
+    padding-left: 12.3%;
+} */
+
+/* .text-information {
+    padding-right: 6.4%;
+} */
+.text-informationIcon {
+    display: flex;
+    justify-content: center;
+
+}
+.text-information__icon {
+    padding-left: 1%;
+}
+
+.text-informationIcon .text-information__icon:first-child {
+    padding-left: 0;
+}
+
+.text-information__Icon img{
+    margin: 0;
+}
+/* 
+.carouselContainer > .text-information {
+    max-width: 422px;
+} */
+
+.carouselContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-information__Button {
+    border: 1px solid #FFCC00;
+    font-size: 14px;
+    line-height: 24px;
+height: 30px;
+width: 118px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.text-information__Button:hover {
+    cursor: pointer;
+    background-color: #FFCC00;
+    transition: 0.3s;
+}
+
+
+
+.text-information__text {
+    font-family: Raleway-medium;
+    font-size: 14px;
+    line-height: 24px;
+}
+.text-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 350px;
+}
+
+
+
+.text-information__Title {
+    font-size: 34px;
+    font-family: Roboto-black;
+    line-height: 24px;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+}   
+
+.text-information__Title > p {
+font-size: 24px;
+line-height: 36px;
+font-family: Raleway-regular;
+/* padding-top:20%; */
+
+}
+
+.carouselContainer__verticalLine {
+height: 500px;
+width: 1px;
+background-color: #FFCC00;
+margin: 0px 30px 0px 30px;
+position: absolute;
+}
+
+.text-information__icon img {
+    opacity: 0.5;
+}
+
+.text-information__icon img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+.littleItem {
+    display: flex;
+}
+.littleItem .item {
+    margin-right: 5px;
+    width: 10px;
+    height: 4px;
+    background-color: #FFCC00;
+}
+
+.littleItem > .itemTwo {
+    margin: 0;
+}
+
+.left, .carousel-control  {
+    position: absolute;
+} */
+
+ .carousel-control, .left {
+    left:-40px;
+}
+
+.horizontalline {
+    background-color: #FFCC00;
+    height: 1px;
+    width: 100px;
+    line-height: 24px;
+    margin-top: 5%;
+}
+.carousel-indicators {
+    position: unset;
+    margin: auto;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+
+.carousel-indicators li {
+    border: 1px solid #ffcc00;
+    background-color: #ffcc00;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    border-radius: 50%;}
+
+.wrapper .indicators-items  li.active {
+    background-color: red;
+}
+.carouselControl-Radio ol li:hover {
+    cursor: pointer;
+}
+
+.carouselControl-Radio ol {
+    display: flex;
+}
+
+.carouselControl-Radio ol li:first-child {
+    margin: 0;
+}
+
+
