@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway-Bold";
 }
 
-.Bottom .container .BottomElement .Bottom__LicenseText, .wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__text, .blog .Blog-Text .Blog-text__Text, .SubscribeToUs > .container .SubscribeToUs-Text .SubscribeToUs-Text__Text, .galleryCahee .container .title .text, .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Text p, .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
+.Bottom > .containerBottom .BottomElement .Bottom__LicenseText, .wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__text, .blog .Blog-Text .Blog-text__Text, .SubscribeToUs > .container .SubscribeToUs-Text .SubscribeToUs-Text__Text, .galleryCahee .container .title .text, .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Text p, .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
   font-size: 17px;
   line-height: 27px;
   font-family: "Raleway-Light";
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.Bottom .container, .wrapperFooter .container, .blog > .container, .SubscribeToUs > .container, .galleryCahee .container, .ourServises > .container, .aboutUs > .container {
+.Bottom > .containerBottom, .wrapperFooter .container, .blog > .container, .SubscribeToUs > .container, .galleryCahee .container, .ourServises > .container, .aboutUs > .container {
   display: flex;
   margin: 0 auto;
   justify-content: center;
@@ -144,7 +144,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 
-.blog > .container .content-Blog .sameValues:hover, .galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 > .column__Foto:hover, .galleryCahee .container .GalleryCahee__Foto .column .column__Foto:hover {
+.blog > .container .content-Blog .sameValues:hover, .galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 .column__Foto:hover, .galleryCahee .container .GalleryCahee__Foto .column .column__Foto:hover {
   box-shadow: none;
   cursor: pointer;
   transition: 0.3s;
@@ -197,9 +197,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .caheeHeader .navMenu_header .content .navMenu_header__Logo img {
     width: 100px;
+    margin-left: 50%;
   }
 }
 .caheeHeader .navMenu_header .content .navMenu_header__siteNavigation {
@@ -238,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
   right: 50px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .caheeHeader .navMenu_header .content .navMenu_header__siteNavigation .menu__btn {
     visibility: visible;
     transition: 0.1s;
@@ -261,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   top: 8px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .caheeHeader .navMenu_header .content .navMenu_header__siteNavigation .menu__box {
     /* display: block; */
     /* position: fixed; */
@@ -281,7 +282,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-end;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .caheeHeader .navMenu_header .content .navMenu_header__siteNavigation .menu__item {
     display: block;
     padding: 12px 24px;
@@ -297,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   font-family: "Raleway-bold";
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .caheeHeader .navMenu_header .content ul {
     visibility: hidden;
     transition: 0.1s;
@@ -306,7 +307,7 @@ h1, h2, h3, h4, h5, h6 {
 .caheeHeader .navMenu_header .content ul li {
   padding: 0px 40px 0px 0px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .caheeHeader .navMenu_header .content ul li {
     padding: 0;
   }
@@ -344,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .container {
-  /* min-height: 1000px; */
+  min-height: 1000px;
   max-width: 1200px;
   display: flex;
   margin: 0 auto;
@@ -353,6 +354,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container .informationAboutaFreeDrink {
   flex: 1 1 auto;
+}
+@media (max-width: 900px) {
+  .container .informationAboutaFreeDrink {
+    display: flex;
+    align-items: center;
+  }
 }
 .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content {
   display: flex;
@@ -363,9 +370,10 @@ h1, h2, h3, h4, h5, h6 {
   height: 250px;
   justify-content: space-between;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content {
     margin-top: 50%;
+    align-items: center;
   }
 }
 .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__title {
@@ -405,18 +413,18 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .aboutUs > .container .aboutUs__block {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .aboutUs > .container .aboutUs__block .imgRaspberry img {
     width: 400px;
     height: 400px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .aboutUs > .container .aboutUs__block .aboutUs-Text {
     margin-top: 2%;
     text-align: center;
@@ -426,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   margin-bottom: 10%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Title {
     font-size: 60px;
   }
@@ -450,13 +458,18 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .ourServises > .container .ourServises-Item {
     flex-direction: column-reverse;
   }
 }
 .ourServises > .container .ourServises-Item .categories {
   width: 400px;
+}
+@media (max-width: 900px) {
+  .ourServises > .container .ourServises-Item .categories {
+    width: auto;
+  }
 }
 .ourServises > .container .ourServises-Item .categories .categories__item {
   width: 100%;
@@ -512,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
 .ourServises > .container .ourServices-MainText {
   color: white;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .ourServises > .container .ourServices-MainText {
     font-size: 60px;
     margin-bottom: 20%;
@@ -524,7 +537,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 1536px;
   display: flex;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .galleryCahee .container .title {
     font-size: 60px;
   }
@@ -535,7 +548,7 @@ h1, h2, h3, h4, h5, h6 {
 .galleryCahee .container .GalleryCahee__Foto {
   margin-top: 5%;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .galleryCahee .container .GalleryCahee__Foto .column {
     flex-direction: column;
   }
@@ -544,38 +557,48 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 1.5%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .galleryCahee .container .GalleryCahee__Foto .column .column__Foto {
     box-shadow: none;
+    margin-right: 0;
+    margin-top: 3%;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .galleryCahee .container .GalleryCahee__Foto .column .column__Foto img {
-    height: 350px;
-    width: 350px;
+    width: 250px;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .galleryCahee .container .GalleryCahee__Foto .column .column-Together__Foto {
     margin: 0;
   }
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .galleryCahee .container .GalleryCahee__Foto .column-2 {
     flex-direction: column;
   }
 }
-.galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 {
-  margin-top: 3%;
+@media (max-width: 900px) {
+  .galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 {
+    display: block;
+  }
 }
-.galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 > .column__Foto {
+.galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 .column__Foto {
   margin-right: 3%;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+  margin-top: 3%;
 }
-@media (max-width: 1200px) {
-  .galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 > .column__Foto img {
-    height: 350px;
-    width: 350px;
+@media (max-width: 900px) {
+  .galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 .column__Foto {
+    margin: 0;
+    box-shadow: none;
+    margin-top: 3%;
+  }
+}
+@media (max-width: 900px) {
+  .galleryCahee .container .GalleryCahee__Foto .column-2 .column-Together__Foto-2 .column__Foto img {
+    width: 250px;
   }
 }
 .galleryCahee .container .GalleryCahee__Foto .column-Together__Foto {
@@ -587,6 +610,12 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #5585A2;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 900px) {
+  .galleryCahee .container .GalleryCahee__Foto__button button {
+    margin-right: 0;
+  }
+}
+
 .SubscribeToUs {
   min-height: 500px;
   display: flex;
@@ -791,32 +820,32 @@ h1, h2, h3, h4, h5, h6 {
   height: 90px;
   display: flex;
 }
-.Bottom .container {
-  max-height: 90px;
+.Bottom > .containerBottom {
+  height: 90px;
 }
-.Bottom .container .BottomElement {
+.Bottom > .containerBottom .BottomElement {
   display: flex;
   width: 100%;
   color: white;
   opacity: 0.5;
   justify-content: space-between;
 }
-.Bottom .container .BottomElement .footerBottom__Logo, .Bottom .container .BottomElement .footerBottom__creatorText, .Bottom .container .BottomElement .footerBottom__LicenseText {
+.Bottom > .containerBottom .BottomElement .footerBottom__Logo, .Bottom > .containerBottom .BottomElement .footerBottom__creatorText, .Bottom > .containerBottom .BottomElement .footerBottom__LicenseText {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0;
 }
-.Bottom .container .BottomElement .Bottom__Logo {
+.Bottom > .containerBottom .BottomElement .Bottom__Logo {
   font-family: "Pacifico-Regular";
   font-size: 25px;
 }
-.Bottom .container .BottomElement .Bottom__creatorText {
+.Bottom > .containerBottom .BottomElement .Bottom__creatorText {
   line-height: 25px;
   font-size: 15px;
   font-family: "Raleway-Light";
 }
-.Bottom .container .BottomElement .Bottom__creatorText p > span {
+.Bottom > .containerBottom .BottomElement .Bottom__creatorText p > span {
   color: #ff2b58;
   font-size: 15px;
   font-family: "Raleway-Bold";
