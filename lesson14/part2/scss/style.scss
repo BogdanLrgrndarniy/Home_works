@@ -115,6 +115,10 @@ $Box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     background-position: center;;
 min-height: 1000px;
  width: 100%;
+ @media (max-width:900px){
+     max-height: 800px;
+     min-height: auto;
+ }
  .navMenu_header {
     justify-content: center;
     // margin: 3% 0 0 0;
@@ -308,6 +312,7 @@ min-height: 1000px;
             @media (max-width: 900px){
                 margin-top: 50%;
                 align-items: center;
+                margin: 0 auto;
             }
             .informationAboutaFreeDrink__title {
                 @extend %Title;
@@ -316,6 +321,9 @@ min-height: 1000px;
             .informationAboutaFreeDrink__text{
                 @extend %Text;
                 text-align: left;
+                @media (max-width:900px) {
+                    text-align: center;
+                }
             }
             .informationAboutaFreeDrink__button{
                  @extend %Button;
@@ -487,6 +495,9 @@ min-height: 1000px;
             @media (max-width:900px){
                 font-size: 60px;
                 margin-bottom: 20%;
+                @media(max-width: 320px){
+                    line-height: 60px;
+                }
             }
         }
     }
@@ -605,7 +616,7 @@ display: flex;
 .SubscribeToUs {
     @extend %mainStyle;
    min-height: 500px;
-
+  
  
   display: flex;
   >  .container{
@@ -613,7 +624,13 @@ display: flex;
         background-image: url('/img/SubscribeToUs/blueberry.png');
         background-repeat: no-repeat;
         background-position: right;
+      
         .SubscribeToUs-Text{
+            @media (max-width:900px){
+             color: white;
+             background: rgba(88, 88, 88, 0.5);
+            align-items: center;
+            }
             @extend %Flex-Column;
             align-items: flex-start;
         
@@ -629,6 +646,9 @@ display: flex;
                 text-align: left;
                 font-family: 'Myidrad-Regular';
                 font-size: 17px;
+                @media (max-width:1200px){
+                    text-align: center;
+                }
             }
         }
         .SubscribeToUs-Form{
@@ -636,6 +656,15 @@ display: flex;
             justify-content: flex-start;
             align-items: flex-start;
             form{
+                @media (max-width:900px){
+                    display: block;
+                }
+                @media (max-width:414px){
+                    margin-left: 5%;
+                }
+                @media (max-width:375px){
+                    margin-left: 0%;
+                }
                 display: flex;
                 align-items: flex-end;
                 input::placeholder, input[type="email"]{
@@ -652,8 +681,20 @@ display: flex;
                     border: 2px solid green; 
                     transition: 0.1s;
                   }
+                  @media (max-width:375px){
+                   width: 80%;
+                    }
+                    @media (max-width:414px){
+                        width: 90%;
+                         }
                 }
                 input[type="submit"] {
+                    @media (max-width:900px){
+                        margin-top: 3%;
+                    }
+                    @media (max-width:400px){
+                    //    margin-right: 33%;
+                    }
                     @extend %Button;
                     box-shadow: $Box-shadow;
                     margin-left: 3%;;
@@ -680,6 +721,9 @@ display: flex;
     .content-Blog{
         display: flex;
         justify-content: space-around;
+        @media (max-width:414px){
+            flex: 1 1 auto;
+        }
         .imageFirst{
             background-image: url('/img/CaheeSection-6/img.jpg');
         }
@@ -699,6 +743,10 @@ display: flex;
             &:hover{
                 @extend %column__Foto;
             }
+            @media (max-width:414px){
+                width: 150px;
+                height: 150px;
+            }
 
             .image{
                 width: 60px;
@@ -715,6 +763,9 @@ display: flex;
                 margin: 110px 0 0 20px;
                 font-size: 22px;
                 text-align: left;
+                @media (max-width:900px){
+                    margin: 70px 0 0 20px;
+                }
             }
             .text2 {
                 margin: 20px 0 0 20px;
@@ -730,6 +781,9 @@ display: flex;
         display: flex;
       align-items: center;
       justify-content: center;
+      @media (max-width:414px){
+        margin-bottom: 20%;
+      }
       button{
         @extend %Button;
         background-color: #f72b3b;
@@ -748,6 +802,11 @@ display: flex;
         @extend %Title;
         color: white;
         margin-bottom: 5%;
+        @media (max-width:414px){
+            font-size: 60px;
+            margin-bottom: 8%;
+            margin-top: 50%;
+        }
     }
     .Blog-text__Text{
         @extend %Text;
@@ -775,6 +834,9 @@ display: flex;
                     .footer__title{
                         @extend %Title;
                         margin-bottom: 5%;
+                        @media (max-width:900px){
+                            font-size: 60px;
+                        }
                     }
                     .footer__text{
                         @extend %Text;
@@ -800,6 +862,12 @@ display: flex;
                         padding-top: 0;
                     }
                     input{
+                        @media(max-width: 414px){
+                            width: 188px;
+                        }
+                        @media(max-width: 600px){
+                            width: 188px;
+                        }
                         width: 500px;
                         height: 50px;
                         background-color: #77dbdc;
@@ -818,6 +886,14 @@ display: flex;
                      font-size: 15px;
                     }
                     textarea{
+                        @media(max-width: 414px){
+                            width: 188px;
+                            height: 100px;
+                        }
+                        @media(max-width: 600px){
+                            width: 188px;
+                            height: 100px;
+                        }
                         width: 500px;
                         height: 250px;
                         background-color: #77dbdc;
@@ -848,6 +924,15 @@ display: flex;
                 }
             }
             .companyContacts{
+                @media(max-width: 414px){
+                  margin-left: 0;
+                }
+                @media(max-width: 900px){
+                    margin-left: 5%;
+                  }
+                  @media(max-width: 667px){
+                    margin-left: 1%;
+                  }
                 margin: 0;
                 margin-left: 15%;
                 text-align: left;
@@ -879,10 +964,21 @@ display: flex;
     margin: 0;
     height: 90px;
     display: flex;
+    @media (max-width:600px){
+        min-height: 200px;
+        height: 0;
+    }
    > .containerBottom{
         @extend %containerStyle;
         height: 90px;
+        @media (max-width:600px){
+         height: auto;
+           }
         .BottomElement{
+            @media (max-width:600px){
+             flex-direction: column;
+             align-items: center;
+            }
             display: flex;
              width: 100%;
             color: white;
@@ -892,7 +988,10 @@ display: flex;
                 @extend %Text;
             }
             .Bottom__Logo{
-    
+                @media (max-width:600px){
+                    margin-bottom: 5%;
+                    margin-top: 5%;
+                   }
             }
             .footerBottom__Logo, .footerBottom__creatorText, .footerBottom__LicenseText {
                 display: flex;

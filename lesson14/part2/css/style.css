@@ -178,6 +178,12 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 1000px;
   width: 100%;
 }
+@media (max-width: 900px) {
+  .caheeHeader {
+    max-height: 800px;
+    min-height: auto;
+  }
+}
 .caheeHeader .navMenu_header {
   justify-content: center;
   position: fixed;
@@ -374,6 +380,7 @@ h1, h2, h3, h4, h5, h6 {
   .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content {
     margin-top: 50%;
     align-items: center;
+    margin: 0 auto;
   }
 }
 .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__title {
@@ -381,6 +388,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
   text-align: left;
+}
+@media (max-width: 900px) {
+  .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
+    text-align: center;
+  }
 }
 .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button {
   background-color: #ff6033;
@@ -531,6 +543,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20%;
   }
 }
+@media (max-width: 900px) and (max-width: 320px) {
+  .ourServises > .container .ourServices-MainText {
+    line-height: 60px;
+  }
+}
 
 .galleryCahee {
   background-color: #FFE92F;
@@ -628,6 +645,13 @@ h1, h2, h3, h4, h5, h6 {
 .SubscribeToUs > .container .SubscribeToUs-Text {
   align-items: flex-start;
 }
+@media (max-width: 900px) {
+  .SubscribeToUs > .container .SubscribeToUs-Text {
+    color: white;
+    background: rgba(88, 88, 88, 0.5);
+    align-items: center;
+  }
+}
 .SubscribeToUs > .container .SubscribeToUs-Text .SubscribeToUs-Text__title {
   font-size: 40px;
   font-family: "Raleway-Bold";
@@ -638,6 +662,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Myidrad-Regular";
   font-size: 17px;
 }
+@media (max-width: 1200px) {
+  .SubscribeToUs > .container .SubscribeToUs-Text .SubscribeToUs-Text__Text {
+    text-align: center;
+  }
+}
 .SubscribeToUs > .container .SubscribeToUs-Form {
   justify-content: flex-start;
   align-items: flex-start;
@@ -645,6 +674,21 @@ h1, h2, h3, h4, h5, h6 {
 .SubscribeToUs > .container .SubscribeToUs-Form form {
   display: flex;
   align-items: flex-end;
+}
+@media (max-width: 900px) {
+  .SubscribeToUs > .container .SubscribeToUs-Form form {
+    display: block;
+  }
+}
+@media (max-width: 414px) {
+  .SubscribeToUs > .container .SubscribeToUs-Form form {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 375px) {
+  .SubscribeToUs > .container .SubscribeToUs-Form form {
+    margin-left: 0%;
+  }
 }
 .SubscribeToUs > .container .SubscribeToUs-Form form input::placeholder, .SubscribeToUs > .container .SubscribeToUs-Form form input[type=email] {
   font-family: "Raleway-Light";
@@ -661,10 +705,25 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid green;
   transition: 0.1s;
 }
+@media (max-width: 375px) {
+  .SubscribeToUs > .container .SubscribeToUs-Form form input[type=email] {
+    width: 80%;
+  }
+}
+@media (max-width: 414px) {
+  .SubscribeToUs > .container .SubscribeToUs-Form form input[type=email] {
+    width: 90%;
+  }
+}
 .SubscribeToUs > .container .SubscribeToUs-Form form input[type=submit] {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   margin-left: 3%;
   background-color: #96b92c;
+}
+@media (max-width: 900px) {
+  .SubscribeToUs > .container .SubscribeToUs-Form form input[type=submit] {
+    margin-top: 3%;
+  }
 }
 .SubscribeToUs > .container .SubscribeToUs-Form form input[type=submit]:hover {
   cursor: pointer;
@@ -678,6 +737,11 @@ h1, h2, h3, h4, h5, h6 {
 .blog > .container .content-Blog {
   display: flex;
   justify-content: space-around;
+}
+@media (max-width: 414px) {
+  .blog > .container .content-Blog {
+    flex: 1 1 auto;
+  }
 }
 .blog > .container .content-Blog .imageFirst {
   background-image: url("/img/CaheeSection-6/img.jpg");
@@ -696,6 +760,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   box-shadow: 0px -100px 20px 0px rgba(0, 0, 0, 0.5) inset;
 }
+@media (max-width: 414px) {
+  .blog > .container .content-Blog .sameValues {
+    width: 150px;
+    height: 150px;
+  }
+}
 .blog > .container .content-Blog .sameValues .image {
   width: 60px;
   height: 60px;
@@ -712,6 +782,11 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 22px;
   text-align: left;
 }
+@media (max-width: 900px) {
+  .blog > .container .content-Blog .sameValues .text {
+    margin: 70px 0 0 20px;
+  }
+}
 .blog > .container .content-Blog .sameValues .text2 {
   margin: 20px 0 0 20px;
   color: #dedde0;
@@ -724,6 +799,11 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 414px) {
+  .blog > .container .button {
+    margin-bottom: 20%;
+  }
+}
 .blog > .container .button button {
   background-color: #f72b3b;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
@@ -734,6 +814,13 @@ h1, h2, h3, h4, h5, h6 {
 .blog .Blog-Text .Blog-text__title {
   color: white;
   margin-bottom: 5%;
+}
+@media (max-width: 414px) {
+  .blog .Blog-Text .Blog-text__title {
+    font-size: 60px;
+    margin-bottom: 8%;
+    margin-top: 50%;
+  }
 }
 .blog .Blog-Text .Blog-text__Text {
   color: white;
@@ -749,6 +836,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__title {
   margin-bottom: 5%;
+}
+@media (max-width: 900px) {
+  .wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__title {
+    font-size: 60px;
+  }
 }
 .wrapperFooter .container footer .form {
   margin-top: 3%;
@@ -775,6 +867,16 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #77dbdc;
   padding-left: 20px;
 }
+@media (max-width: 414px) {
+  .wrapperFooter .container footer .form .formElement .elementForm input {
+    width: 188px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapperFooter .container footer .form .formElement .elementForm input {
+    width: 188px;
+  }
+}
 .wrapperFooter .container footer .form .formElement .elementForm input[type~=text], .wrapperFooter .container footer .form .formElement .elementForm input[type~=email], .wrapperFooter .container footer .form .formElement .elementForm input[type~=tel], .wrapperFooter .container footer .form .formElement .elementForm textarea {
   font-size: 15px;
 }
@@ -784,6 +886,18 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #77dbdc;
   padding-left: 20px;
   padding-top: 3%;
+}
+@media (max-width: 414px) {
+  .wrapperFooter .container footer .form .formElement .elementForm textarea {
+    width: 188px;
+    height: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .wrapperFooter .container footer .form .formElement .elementForm textarea {
+    width: 188px;
+    height: 100px;
+  }
 }
 .wrapperFooter .container footer .form .formElement .button button {
   margin-top: 5%;
@@ -797,6 +911,21 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   margin-left: 15%;
   text-align: left;
+}
+@media (max-width: 414px) {
+  .wrapperFooter .container footer .form .companyContacts {
+    margin-left: 0;
+  }
+}
+@media (max-width: 900px) {
+  .wrapperFooter .container footer .form .companyContacts {
+    margin-left: 5%;
+  }
+}
+@media (max-width: 667px) {
+  .wrapperFooter .container footer .form .companyContacts {
+    margin-left: 1%;
+  }
 }
 .wrapperFooter .container footer .form .companyContacts .companyContactsInformation div {
   font-size: 17px;
@@ -820,8 +949,19 @@ h1, h2, h3, h4, h5, h6 {
   height: 90px;
   display: flex;
 }
+@media (max-width: 600px) {
+  .Bottom {
+    min-height: 200px;
+    height: 0;
+  }
+}
 .Bottom > .containerBottom {
   height: 90px;
+}
+@media (max-width: 600px) {
+  .Bottom > .containerBottom {
+    height: auto;
+  }
 }
 .Bottom > .containerBottom .BottomElement {
   display: flex;
@@ -829,6 +969,18 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   opacity: 0.5;
   justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .Bottom > .containerBottom .BottomElement {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .Bottom > .containerBottom .BottomElement .Bottom__Logo {
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
 }
 .Bottom > .containerBottom .BottomElement .footerBottom__Logo, .Bottom > .containerBottom .BottomElement .footerBottom__creatorText, .Bottom > .containerBottom .BottomElement .footerBottom__LicenseText {
   display: flex;
