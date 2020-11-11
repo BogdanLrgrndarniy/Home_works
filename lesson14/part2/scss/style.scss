@@ -284,70 +284,70 @@ min-height: 1000px;
         }
  
     }
-
-}
-.container{
-    min-height: 1000px;
-    max-width: 1200px; 
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    width: 100%;
-
-   
-    .informationAboutaFreeDrink{
-        flex: 1 1 auto; 
-        @media (max-width: 900px){
-            display: flex;
-            align-items: center;
-        }
-        .informationAboutaFreeDrink__content{
-            display: flex;
-            flex-direction: column;
-            margin-top: 180px;
-            align-items: flex-start;
-            margin-top: 25%;
-            height: 250px;
-            justify-content: space-between;
+    .container{
+        min-height: 1000px;
+        max-width: 1200px; 
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%;
+    
+       
+        .informationAboutaFreeDrink{
+            flex: 1 1 auto; 
             @media (max-width: 900px){
-                margin-top: 50%;
-                align-items: center;
-                margin: 0 auto;
-            }
-            .informationAboutaFreeDrink__title {
-                @extend %Title;
-                font-size: 60px;
-            }
-            .informationAboutaFreeDrink__text{
-                @extend %Text;
-                text-align: left;
-                @media (max-width:900px) {
-                    text-align: center;
-                }
-            }
-            .informationAboutaFreeDrink__button{
-                 @extend %Button;
-                 background-color: #ff6033;
-                 box-shadow: $Box-shadow;
-                a{
-                    color: white;
-                }
-                &:hover{
-                  @extend %ButtonAnimation;
-                }
-            }
-          }
-          .container_bottom{
-            padding: 0;
-            display: block;
-            .tem_Scroll{
                 display: flex;
-                justify-content: center;
-               align-items: center; 
-               height: 150px;
+                align-items: center;
             }
-          }
+            .informationAboutaFreeDrink__content{
+                display: flex;
+                flex-direction: column;
+                margin-top: 180px;
+                align-items: flex-start;
+                margin-top: 25%;
+                height: 250px;
+                justify-content: space-between;
+                @media (max-width: 900px){
+                    margin-top: 50%;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+                .informationAboutaFreeDrink__title {
+                    @extend %Title;
+                    font-size: 60px;
+                }
+                .informationAboutaFreeDrink__text{
+                    @extend %Text;
+                    text-align: left;
+                    @media (max-width:900px) {
+                        text-align: center;
+                    }
+                }
+                .informationAboutaFreeDrink__button{
+                     @extend %Button;
+                     background-color: #ff6033;
+                     box-shadow: $Box-shadow;
+                    a{
+                        color: white;
+                    }
+                    &:hover{
+                      @extend %ButtonAnimation;
+                    }
+                }
+              }
+              .container_bottom{
+                padding: 0;
+                display: block;
+                .tem_Scroll{
+                    display: flex;
+                    justify-content: center;
+                   align-items: center; 
+                   height: 150px;
+                }
+              }
+        }
     }
+    
 }
 
 

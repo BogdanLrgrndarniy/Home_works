@@ -88,13 +88,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Myidrad-Regular";
   src: url("/Home_works/lesson14/part2/fonts/MyriadPro-Regular.ttf");
 }
-.wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__title, .blog .Blog-Text .Blog-text__title, .galleryCahee .container .title, .ourServises > .container .ourServices-MainText, .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Title, .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__title {
+.wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__title, .blog .Blog-Text .Blog-text__title, .galleryCahee .container .title, .ourServises > .container .ourServices-MainText, .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Title, .caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__title {
   font-size: 90px;
   line-height: 25px;
   font-family: "Raleway-Bold";
 }
 
-.Bottom > .containerBottom .BottomElement .Bottom__LicenseText, .wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__text, .blog .Blog-Text .Blog-text__Text, .SubscribeToUs > .container .SubscribeToUs-Text .SubscribeToUs-Text__Text, .galleryCahee .container .title .text, .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Text p, .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
+.Bottom > .containerBottom .BottomElement .Bottom__LicenseText, .wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__text, .blog .Blog-Text .Blog-text__Text, .SubscribeToUs > .container .SubscribeToUs-Text .SubscribeToUs-Text__Text, .galleryCahee .container .title .text, .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Text p, .caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
   font-size: 17px;
   line-height: 27px;
   font-family: "Raleway-Light";
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
 }
 
-.wrapperFooter .container footer .form .formElement .button button, .blog > .container .button button, .SubscribeToUs > .container .SubscribeToUs-Form form input[type=submit], .galleryCahee .container .GalleryCahee__Foto__button button, .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button {
+.wrapperFooter .container footer .form .formElement .button button, .blog > .container .button button, .SubscribeToUs > .container .SubscribeToUs-Form form input[type=submit], .galleryCahee .container .GalleryCahee__Foto__button button, .caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button {
   font-size: 20px;
   font-family: "Raleway-Light";
   line-height: 27px;
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.wrapperFooter .container footer .form .formElement .button button:hover, .blog > .container .button button:hover, .SubscribeToUs > .container .SubscribeToUs-Form form input[type=submit]:hover, .galleryCahee .container .GalleryCahee__Foto__button button:hover, .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button:hover {
+.wrapperFooter .container footer .form .formElement .button button:hover, .blog > .container .button button:hover, .SubscribeToUs > .container .SubscribeToUs-Form form input[type=submit]:hover, .galleryCahee .container .GalleryCahee__Foto__button button:hover, .caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button:hover {
   box-shadow: none;
   transition: all 500ms ease;
 }
@@ -349,8 +349,7 @@ h1, h2, h3, h4, h5, h6 {
 .caheeHeader .navMenu_header .content ul li a:focus::before, .caheeHeader .navMenu_header .content ul li a:hover::before {
   width: 100%;
 }
-
-.container {
+.caheeHeader .container {
   min-height: 1000px;
   max-width: 1200px;
   display: flex;
@@ -358,16 +357,16 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   width: 100%;
 }
-.container .informationAboutaFreeDrink {
+.caheeHeader .container .informationAboutaFreeDrink {
   flex: 1 1 auto;
 }
 @media (max-width: 900px) {
-  .container .informationAboutaFreeDrink {
+  .caheeHeader .container .informationAboutaFreeDrink {
     display: flex;
     align-items: center;
   }
 }
-.container .informationAboutaFreeDrink .informationAboutaFreeDrink__content {
+.caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content {
   display: flex;
   flex-direction: column;
   margin-top: 180px;
@@ -377,35 +376,35 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
 }
 @media (max-width: 900px) {
-  .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content {
+  .caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content {
     margin-top: 50%;
     align-items: center;
     margin: 0 auto;
   }
 }
-.container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__title {
+.caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__title {
   font-size: 60px;
 }
-.container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
+.caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
   text-align: left;
 }
 @media (max-width: 900px) {
-  .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
+  .caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__text {
     text-align: center;
   }
 }
-.container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button {
+.caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button {
   background-color: #ff6033;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
-.container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button a {
+.caheeHeader .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__button a {
   color: white;
 }
-.container .informationAboutaFreeDrink .container_bottom {
+.caheeHeader .container .informationAboutaFreeDrink .container_bottom {
   padding: 0;
   display: block;
 }
-.container .informationAboutaFreeDrink .container_bottom .tem_Scroll {
+.caheeHeader .container .informationAboutaFreeDrink .container_bottom .tem_Scroll {
   display: flex;
   justify-content: center;
   align-items: center;
