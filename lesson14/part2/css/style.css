@@ -74,19 +74,19 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 @font-face {
   font-family: "Raleway-Bold";
-  src: url("/fonts/Raleway-Bold.ttf");
+  src: url("/Home_works/lesson14/part2/fonts/Raleway-Bold.ttf");
 }
 @font-face {
   font-family: "Raleway-Light";
-  src: url("/fonts/Raleway-Light.ttf");
+  src: url("/Home_works/lesson14/part2/fonts/Raleway-Light.ttf");
 }
 @font-face {
   font-family: "Pacifico-Regular";
-  src: url("/fonts/Pacifico-Regular.ttf");
+  src: url("/Home_works/lesson14/part2/fonts/Pacifico-Regular.ttf");
 }
 @font-face {
   font-family: "Myidrad-Regular";
-  src: url("/fonts/MyriadPro-Regular.ttf");
+  src: url("/Home_works/lesson14/part2/fonts/MyriadPro-Regular.ttf");
 }
 .wrapperFooter .container footer .foterContact .footerText .footerTextContact .footer__title, .blog .Blog-Text .Blog-text__title, .galleryCahee .container .title, .ourServises > .container .ourServices-MainText, .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Title, .container .informationAboutaFreeDrink .informationAboutaFreeDrink__content .informationAboutaFreeDrink__title {
   font-size: 90px;
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 .caheeHeader {
   display: flex;
   flex-direction: column;
-  background-image: url("/img/CaheeSection-1/img.png");
+  background-image: url("/Home_works/lesson14/part2/img/CaheeSection-1/img.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -461,7 +461,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 .ourServises > .container {
-  background-image: url("/img/CaheeSection-3/tomatoSlices.png");
+  background-image: url("/Home_works/lesson14/part2/img/CaheeSection-3/tomatoSlices.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -638,7 +638,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
 }
 .SubscribeToUs > .container {
-  background-image: url("/img/SubscribeToUs/blueberry.png");
+  background-image: url("/Home_works/lesson14/part2/img/SubscribeToUs/blueberry.png");
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -744,13 +744,13 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .blog > .container .content-Blog .imageFirst {
-  background-image: url("/img/CaheeSection-6/img.jpg");
+  background-image: url("/Home_works/lesson14/part2/img/CaheeSection-6/img.jpg");
 }
 .blog > .container .content-Blog .imageSecond {
-  background-image: url("/img/CaheeSection-6/img2.jpg");
+  background-image: url("/Home_works/lesson14/part2/img/CaheeSection-6/img2.jpg");
 }
 .blog > .container .content-Blog .imageThird {
-  background-image: url("/img/CaheeSection-6/img3.jpg");
+  background-image: url("/Home_works/lesson14/part2/img/CaheeSection-6/img3.jpg");
 }
 .blog > .container .content-Blog .sameValues {
   width: 370px;
@@ -829,7 +829,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapperFooter {
   min-height: 953px;
   display: flex;
-  background-image: url("/img/CaheeSection-7/background.png");
+  background-image: url("/Home_works/lesson14/part2/img/CaheeSection-7/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

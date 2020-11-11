@@ -2,22 +2,22 @@
 
 @font-face {
     font-family: 'Raleway-Bold';
-    src: url('/fonts/Raleway-Bold.ttf');
+    src: url('/Home_works/lesson14/part2/fonts/Raleway-Bold.ttf');
 }
 
 @font-face {
     font-family: 'Raleway-Light';
-    src: url('/fonts/Raleway-Light.ttf');
+    src: url('/Home_works/lesson14/part2/fonts/Raleway-Light.ttf');
 }
 @font-face {
     font-family: 'Pacifico-Regular';
-    src: url('/fonts/Pacifico-Regular.ttf');
+    src: url('/Home_works/lesson14/part2/fonts/Pacifico-Regular.ttf');
 }
 
 
 @font-face {
     font-family: 'Myidrad-Regular';
-    src: url('/fonts/MyriadPro-Regular.ttf');
+    src: url('/Home_works/lesson14/part2/fonts/MyriadPro-Regular.ttf');
 }
 //заголовков для каждой секции
 %Title {
@@ -109,7 +109,7 @@ $Box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     // min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url('/img/CaheeSection-1/img.png');
+    background-image: url('/Home_works/lesson14/part2/img/CaheeSection-1/img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;;
@@ -415,7 +415,7 @@ min-height: 1000px;
    > .container{
     @extend %containerStyle;
     @extend %Flex;
-    background-image: url('/img/CaheeSection-3/tomatoSlices.png');
+    background-image: url('/Home_works/lesson14/part2/img/CaheeSection-3/tomatoSlices.png');
     background-repeat: no-repeat;
     background-position: right;
         .ourServises-Item{
@@ -621,7 +621,7 @@ display: flex;
   display: flex;
   >  .container{
         @extend %containerStyle;
-        background-image: url('/img/SubscribeToUs/blueberry.png');
+        background-image: url('/Home_works/lesson14/part2/img/SubscribeToUs/blueberry.png');
         background-repeat: no-repeat;
         background-position: right;
       
@@ -725,13 +725,13 @@ display: flex;
             flex: 1 1 auto;
         }
         .imageFirst{
-            background-image: url('/img/CaheeSection-6/img.jpg');
+            background-image: url('/Home_works/lesson14/part2/img/CaheeSection-6/img.jpg');
         }
         .imageSecond{
-            background-image: url('/img/CaheeSection-6/img2.jpg');
+            background-image: url('/Home_works/lesson14/part2/img/CaheeSection-6/img2.jpg');
         }
         .imageThird{
-            background-image: url('/img/CaheeSection-6/img3.jpg');
+            background-image: url('/Home_works/lesson14/part2/img/CaheeSection-6/img3.jpg');
         }
         .sameValues{
             width: 370px;
@@ -820,7 +820,7 @@ display: flex;
     @extend %mainStyle;
     min-height: 953px;
     display: flex;
-    background-image: url('/img/CaheeSection-7/background.png');
+    background-image: url('/Home_works/lesson14/part2/img/CaheeSection-7/background.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;;
