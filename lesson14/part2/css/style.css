@@ -458,6 +458,8 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 900px) {
   .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Title {
     font-size: 60px;
+    margin-bottom: 5%;
+    margin-top: 6%;
   }
 }
 .aboutUs > .container .aboutUs__block .aboutUs-Text .aboutUs__block__Text p {
