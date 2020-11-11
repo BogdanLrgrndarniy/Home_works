@@ -193,6 +193,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   height: 100px;
 }
+@media (max-width: 900px) and (orientation: landscape) {
+  .caheeHeader .navMenu_header {
+    height: 50px;
+  }
+}
 .caheeHeader .navMenu_header .content {
   display: flex;
   justify-content: space-between;
@@ -249,6 +254,11 @@ h1, h2, h3, h4, h5, h6 {
   .caheeHeader .navMenu_header .content .navMenu_header__siteNavigation .menu__btn {
     visibility: visible;
     transition: 0.1s;
+  }
+}
+@media (max-width: 900px) and (orientation: landscape) {
+  .caheeHeader .navMenu_header .content .navMenu_header__siteNavigation .menu__btn {
+    top: 0;
   }
 }
 .caheeHeader .navMenu_header .content .navMenu_header__siteNavigation .menu__btn > span,

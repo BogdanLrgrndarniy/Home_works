@@ -128,8 +128,8 @@ min-height: 1000px;
     display: flex;
     background-color: white;
     height: 100px;
-    @media (max-width: 900px){
-          
+    @media (max-width:900px) and (orientation: landscape){
+          height: 50px;
     }
     .content{
         display: flex;
@@ -181,10 +181,13 @@ min-height: 1000px;
                 cursor: pointer;
                 z-index: 1;
                 right: 50px;
-                @media (max-width: 900px){
+                @media (max-width: 900px) {
                 visibility:  visible;
                 transition: 0.1s;
                 }
+                @media (max-width: 900px)  and (orientation: landscape){
+                   top: 0;
+                    }
               }
               .menu__btn > span,
                 .menu__btn > span::before,
