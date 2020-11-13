@@ -1,22 +1,6 @@
 @import 'stylenull';
 
 
-.aboutUs-Title span{
-    @media (min-width:375px) {
-     
-      }
-      
-}
-
-%containerStyle{
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 1200px;
-  width: 100%;
-}
-
 .wrapper{
     @media screen and (min-width:200px) and (max-width:414px) {
         // min-width: 395px;       
@@ -163,5 +147,7 @@
               top: 3957px;
           }
            }
-     
-           
+    //  6 секция contactUs
+          .contactUs{
+
+          }
