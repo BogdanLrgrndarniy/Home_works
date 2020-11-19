@@ -1,0 +1,1033 @@
+@import 'Adaptice-Styles' ;
+
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('/Home_works/lesson14/part2/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('/Home_works/lesson14/part2/fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: 'Pacifico-Regular';
+    src: url('/Home_works/lesson14/part2/fonts/Pacifico-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'Myidrad-Regular';
+    src: url('/Home_works/lesson14/part2/fonts/MyriadPro-Regular.ttf');
+}
+//заголовков для каждой секции
+%Title {
+    font-size: 90px;
+    line-height: 25px;
+    font-family: 'Raleway-Bold';
+}
+//текста для каждой секции
+%Text {  
+    font-size: 17px;
+    line-height: 27px;
+    font-family: 'Raleway-Light';
+}
+
+
+%FlexColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+%Flex {
+    display: flex;
+}
+
+%Flex-Column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+//кнопка для 1,4,5, и 6 секции
+%Button {
+    font-size: 20px;
+    font-family: 'Raleway-Light';
+    line-height: 27px;
+    height: 55px;
+    width: 200px;
+    color: white;
+}
+
+%ButtonAnimation{
+        box-shadow: none;
+        transition: all 500ms ease;
+}
+//Главные стили для оболочки контейнера
+%mainStyle {
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+//стили для контейнера общие
+%containerStyle{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1200px;
+  width: 100%;
+}
+// анимации для 4 секция для фото
+%column__Foto{
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+// секция 7 для placeHolder
+%placeHoleder-style{
+    padding: 0px 0px 0px 1%;
+    font-size: 15px;
+    color: white;
+    opacity: 1;
+}
+%placeHoleder-style-2{
+    color: #ffffff; 
+    opacity: 1;
+    font-family: 'Raleway-Light';
+}
+
+%input-TextareaFocus{
+        background-color: #00C4C4;
+        border-left: 5px solid #355b82
+}
+$Box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+
+//1 секция
+.caheeHeader{
+    @extend %mainStyle;
+    // height: 100vh;
+    // min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/Home_works/lesson14/part2/img/CaheeSection-1/img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;;
+min-height: 1000px;
+ width: 100%;
+ @media (max-width:900px){
+     max-height: 800px;
+     min-height: auto;
+ }
+ .navMenu_header {
+    justify-content: center;
+    // margin: 3% 0 0 0;
+    position: fixed;
+    z-index: 50;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    height: 100px;
+    @media (max-width:900px) and (orientation: landscape){
+          height: 50px;
+    }
+    .content{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px; 
+        width: 1200px;
+        .navMenu_header__Logo{
+            display: flex;
+            align-items: center;
+            img{
+                @media (max-width: 900px){
+                    width: 100px;
+                    margin-left: 50%;;
+            }
+           
+            }
+        }
+        .navMenu_header__siteNavigation{
+            display: flex;
+            align-items: center;
+            #menu__toggle {
+                opacity: 0;
+              }
+              #menu__toggle:checked ~ .menu__btn > span {
+                transform: rotate(45deg);
+              }
+              #menu__toggle:checked ~ .menu__btn > span::before {
+                top: 0;
+                transform: rotate(0);
+              }
+              #menu__toggle:checked ~ .menu__btn > span::after {
+                top: 0;
+                transform: rotate(90deg);
+              }
+              #menu__toggle:checked ~ .menu__box {
+                visibility: visible;
+                left: 50%;
+              }
+              .menu__btn {
+                display: flex;
+                align-items: center;
+                position: fixed;
+                top: 20px;
+               visibility: hidden;
+                width: 26px;
+                height: 50;
+                height: 50px;
+                height: 50p;
+                cursor: pointer;
+                z-index: 1;
+                right: 50px;
+                @media (max-width: 900px) {
+                visibility:  visible;
+                transition: 0.1s;
+                }
+                @media (max-width: 900px)  and (orientation: landscape){
+                   top: 0;
+                    }
+              }
+              .menu__btn > span,
+                .menu__btn > span::before,
+                .menu__btn > span::after {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #616161;
+                }
+                .menu__btn > span::before {
+                content: '';
+                top: -8px;
+                }
+                .menu__btn > span::after {
+                content: '';
+                top: 8px;
+                }
+                .menu__box{
+                    @media (max-width: 900px) {
+                         /* display: block; */
+    /* position: fixed; */
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    text-align: right;
+    left: auto;
+    flex-direction: column;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+}
+                     
+                    }
+                    .menu__item {
+                        @media (max-width: 900px){
+                            display: block;
+                            padding: 12px 24px;
+                            color: #333;
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 20px;
+                            font-weight: 600;
+                            text-decoration: none;
+                            
+                        }
+                    }
+                }
+                
+           
+            ul{
+                font-size: 16px;
+                display: flex;
+                font-family: 'Raleway-bold';
+                @media (max-width: 900px){
+                    visibility:  hidden;
+                    transition: 0.1s;
+                    }
+                
+                li{
+                    padding: 0px 40px 0px 0px;
+                    @media (max-width:900px){
+                        padding: 0;
+                    }
+                    &:last-child{
+                        padding: 0px;
+                    }
+                    a{
+                        position: relative;
+                        color:black; /*задаём цвет ссылки*/
+                        cursor: pointer;
+                        line-height: 1; /*задаём высоту строки*/
+                        text-decoration: none; 
+                        &::before{
+                            display: block;
+                            position: absolute;
+                            left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+                            width: 0;/*задаём длинну линии до наведения курсора*/
+                          height: 3px; /*задаём ширину линии*/
+                          top:-9px;
+                            background-color: #ff6033; /*задаём цвет линии*/
+                            content: "";
+                            transition: width 0.3s ease-out; /*задаём время анимации*/
+                        }
+                        &:focus::before, &:hover::before{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+  
+        }
+ 
+    }
+    .container{
+        min-height: 1000px;
+        max-width: 1200px; 
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 100%;
+    
+       
+        .informationAboutaFreeDrink{
+            flex: 1 1 auto; 
+            @media (max-width: 900px){
+                display: flex;
+                align-items: center;
+            }
+            .informationAboutaFreeDrink__content{
+                display: flex;
+                flex-direction: column;
+                margin-top: 180px;
+                align-items: flex-start;
+                margin-top: 25%;
+                height: 250px;
+                justify-content: space-between;
+                @media (max-width: 900px){
+                    margin-top: 50%;
+                    align-items: center;
+                    margin: 0 auto;
+                }
+                .informationAboutaFreeDrink__title {
+                    @extend %Title;
+                    font-size: 60px;
+                }
+                .informationAboutaFreeDrink__text{
+                    @extend %Text;
+                    text-align: left;
+                    @media (max-width:900px) {
+                        text-align: center;
+                    }
+                }
+                .informationAboutaFreeDrink__button{
+                     @extend %Button;
+                     background-color: #ff6033;
+                     box-shadow: $Box-shadow;
+                    a{
+                        color: white;
+                    }
+                    &:hover{
+                      @extend %ButtonAnimation;
+                    }
+                }
+              }
+              .container_bottom{
+                padding: 0;
+                display: block;
+                .tem_Scroll{
+                    display: flex;
+                    justify-content: center;
+                   align-items: center; 
+                   height: 150px;
+                }
+              }
+        }
+    }
+    
+}
+
+
+//2 секция
+.aboutUs{
+    min-height: 700px;
+    @extend %mainStyle;
+    @extend %Flex;
+    background-color: #00BABA;
+    width: 100%;
+   > .container{
+        @extend %containerStyle;
+        @extend %Flex;
+        text-align: left;
+         .aboutUs__block {
+             display: flex;
+             justify-content: space-between;
+             align-items: center;
+             @media (max-width:900px){
+                flex-direction: column-reverse;
+             }
+            .imgRaspberry{
+              img{
+                @media (max-width:900px){
+                    width: 400px;
+                    height: 400px;
+                 }
+             
+              }
+            }
+            .aboutUs-Text{
+                @media (max-width:900px){
+                    margin-top:2%;
+                    text-align: center;
+                 }
+                
+                .aboutUs__block__Title{
+                    @extend %Title;
+                    color: white;
+                    margin-bottom: 10%;
+                    @media (max-width:900px){
+                        font-size: 60px;
+                        margin-bottom: 5%;
+                        margin-top: 6%;
+                     }
+                    }
+                    .aboutUs__block__Text{
+                        p{
+                  @extend %Text;
+                  color: white;
+                        }
+            }
+            
+            }
+         }
+       
+    }
+}
+
+// 3 секция
+.ourServises{
+    @extend %mainStyle;
+    @extend %Flex;
+    background-color: #70BFFF;
+    min-height: 790px;
+    width: 100%;
+   > .container{
+    @extend %containerStyle;
+    @extend %Flex;
+    background-image: url('/Home_works/lesson14/part2/img/CaheeSection-3/tomatoSlices.png');
+    background-repeat: no-repeat;
+    background-position: right;
+        .ourServises-Item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media (max-width: 900px){
+                flex-direction: column-reverse;
+            }
+         
+            .categories{
+            width: 400px;
+            @media (max-width:900px){
+                width: auto;
+            }
+              .categories__item{
+                width: 100%;
+                background-color:white ;
+                height: 100px;
+                border-radius: 1%;
+                display: flex;
+                box-shadow: $Box-shadow;
+                margin-bottom: 5%;
+                &:hover{
+                
+                    opacity: 0.8;
+                    cursor: pointer;
+                    transition: 0.2s;
+                  
+            }
+                .categoriesBlock{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    // width: 306px;
+                    // margin: 0px 0px 0px 70px;
+                    width: 100%;
+                    padding-left: 20%;
+                    .categoriesText{
+                        font-size: 20px;
+                        font-family: 'Raleway-Bold';
+                        line-height: 27px;
+                    }
+                    .text-third{
+                        margin: 0px 1% 0px 0px;
+                    }
+                    .vertical-Line{
+                        display: block;
+                        content: '';
+                        width: 1px;
+                        height: 100px;
+                        background-color: black;
+                        margin-left: 17%;
+                      
+                    }
+                    .vertical-LineFirst{
+                        margin-left: 13%;
+                    }
+                    .vertical-LineThird{
+                        margin: 0;
+                    }
+                    .categoriesIcon{
+                        font-size: 50px;
+                        line-height: 27px;
+                        margin-right: 5%;
+                    }
+                }
+                .blockWidth{
+                    padding: 0px 0px 0px 10%;
+                }
+            }
+            }
+        }
+        .ourServices-MainText{
+            @extend %Title;
+            color: white;
+            @media (max-width:900px){
+                font-size: 60px;
+                margin-bottom: 20%;
+                @media(max-width: 320px){
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+}
+
+// 4 секция 
+.galleryCahee {
+@extend %mainStyle;
+background-color:#FFE92F;
+// height: 100vh;
+min-height: 1536px;
+display: flex;
+@media (max-width:900px){
+   
+}
+.container{
+@extend %containerStyle;
+
+.title{
+    @extend %Title;
+    @media (max-width:900px){
+        font-size: 60px;
+    }
+    .text{
+        @extend %Text;
+        margin-top: 5%;
+    }
+}
+.GalleryCahee__Foto {
+    margin-top: 5%;
+    .column {
+       @extend %Flex;
+       @media (max-width:900px){
+           flex-direction: column;
+       }
+       .column__Foto{
+           margin-right: 1.5%;
+           box-shadow: $Box-shadow;
+           &:hover{
+            @extend %column__Foto;
+           }
+           @media (max-width:900px){
+               box-shadow: none;
+               margin-right: 0;
+               margin-top: 3%;
+           }
+           img{
+            @media (max-width:900px){
+                
+                width: 250px;
+            }
+           }
+       }
+       .column-Together__Foto{
+           @media( max-width: 900px){
+               margin: 0;
+           }
+       }
+    }
+    .column-2{
+        @media(max-width:900px){
+            flex-direction: column;
+        }
+   
+   .column-Together__Foto-2{
+       
+       @media (max-width: 900px){
+           display: block;
+       }
+ @extend %Flex;
+ .column__Foto{
+    margin-right: 3%;
+    box-shadow: $Box-shadow;
+    margin-top: 3%;
+    @media (max-width:900px){
+        margin: 0;
+        box-shadow: none;
+        margin-top: 3%;
+    }
+    img{
+        @media(max-width:900px){
+           
+            width: 250px;
+        }
+    }
+   
+    &:hover{
+        @extend %column__Foto;
+    }
+}
+
+   }
+    }
+    .column-Together__Foto {
+        @extend %FlexColumn;
+        margin-left: 1.5%
+    }
+ 
+}
+.GalleryCahee__Foto__button button{
+    @extend %Button;
+    margin-top: 6%;;
+    margin-right: 3%;
+    background-color: #5585A2;
+    box-shadow: $Box-shadow;
+    &:hover{
+        @extend %ButtonAnimation;
+    }
+    @media (max-width:900px){
+        margin-right: 0;
+    }
+}
+}
+}
+// 5 секция
+.SubscribeToUs {
+    @extend %mainStyle;
+   min-height: 500px;
+  
+ 
+  display: flex;
+  >  .container{
+        @extend %containerStyle;
+        background-image: url('/Home_works/lesson14/part2/img/SubscribeToUs/blueberry.png');
+        background-repeat: no-repeat;
+        background-position: right;
+      
+        .SubscribeToUs-Text{
+            @media (max-width:900px){
+             color: white;
+             background: rgba(88, 88, 88, 0.5);
+            align-items: center;
+            }
+            @extend %Flex-Column;
+            align-items: flex-start;
+        
+            .SubscribeToUs-Text__title{
+                font-size: 40px;
+                font-family: 'Raleway-Bold';
+            }
+            .SubscribeToUs-Text__Text{
+                @extend %Text;
+            }
+            .SubscribeToUs-Text__Text{
+                padding-top: 2%;
+                text-align: left;
+                font-family: 'Myidrad-Regular';
+                font-size: 17px;
+                @media (max-width:1200px){
+                    text-align: center;
+                }
+            }
+        }
+        .SubscribeToUs-Form{
+            @extend %Flex-Column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            form{
+                @media (max-width:900px){
+                    display: block;
+                }
+                @media (max-width:414px){
+                    margin-left: 5%;
+                }
+                @media (max-width:375px){
+                    margin-left: 0%;
+                }
+                display: flex;
+                align-items: flex-end;
+                input::placeholder, input[type="email"]{
+                    font-family: 'Raleway-Light';
+                    font-size: 15px;
+                    margin-top: 6%;
+                }
+                input[type="email"] {
+                    border: 1px solid black;
+                    width: 568px;
+                    height: 54px;
+                    padding-left: 3%;
+                  &:focus{
+                    border: 2px solid green; 
+                    transition: 0.1s;
+                  }
+                  @media (max-width:375px){
+                   width: 80%;
+                    }
+                    @media (max-width:414px){
+                        width: 90%;
+                         }
+                }
+                input[type="submit"] {
+                    @media (max-width:900px){
+                        margin-top: 3%;
+                    }
+                    @media (max-width:400px){
+                    //    margin-right: 33%;
+                    }
+                    @extend %Button;
+                    box-shadow: $Box-shadow;
+                    margin-left: 3%;;
+                    background-color: #96b92c;
+                    &:hover{
+                       @extend %ButtonAnimation;
+                       cursor: pointer;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+// 6 секция 
+.blog{
+@extend %mainStyle;
+min-height: 864px;
+background-color: rgb(176, 124, 247);
+display: flex;
+>.container{
+    @extend %containerStyle;
+    .content-Blog{
+        display: flex;
+        justify-content: space-around;
+        @media (max-width:414px){
+            flex: 1 1 auto;
+        }
+        .imageFirst{
+            background-image: url('/Home_works/lesson14/part2/img/CaheeSection-6/img.jpg');
+        }
+        .imageSecond{
+            background-image: url('/Home_works/lesson14/part2/img/CaheeSection-6/img2.jpg');
+        }
+        .imageThird{
+            background-image: url('/Home_works/lesson14/part2/img/CaheeSection-6/img3.jpg');
+        }
+        .sameValues{
+            width: 370px;
+            height: 310px;
+            color: white;
+            border-radius: 2%;
+            box-shadow: $Box-shadow;
+            box-shadow: 0px -100px 20px 0px rgba(0, 0, 0, 0.5) inset;
+            &:hover{
+                @extend %column__Foto;
+            }
+            @media (max-width:414px){
+                width: 150px;
+                height: 150px;
+            }
+
+            .image{
+                width: 60px;
+                height: 60px;
+                background-color: rgba(0, 0, 0, 0.4);
+                border-radius: 15%; 
+                font-size: 23px;
+                text-align: center;
+                margin: 30px 30px;
+                display: flex;
+                align-items: center;
+            }
+            .text {
+                margin: 110px 0 0 20px;
+                font-size: 22px;
+                text-align: left;
+                @media (max-width:900px){
+                    margin: 70px 0 0 20px;
+                }
+            }
+            .text2 {
+                margin: 20px 0 0 20px;
+                color: rgb(222, 221, 224);
+                text-align: left;
+            }
+        }
+    
+    }
+    .button{
+        margin: 0 auto;
+        margin-top:5%;
+        display: flex;
+      align-items: center;
+      justify-content: center;
+      @media (max-width:414px){
+        margin-bottom: 20%;
+      }
+      button{
+        @extend %Button;
+        background-color: #f72b3b;
+        box-shadow: $Box-shadow;
+        &:hover{
+            @extend %ButtonAnimation;
+          }
+      }
+     
+      
+    }
+}
+.Blog-Text{
+    margin: 0px 0px 5% 0px;
+    .Blog-text__title{
+        @extend %Title;
+        color: white;
+        margin-bottom: 5%;
+        @media (max-width:414px){
+            font-size: 60px;
+            margin-bottom: 8%;
+            margin-top: 50%;
+        }
+    }
+    .Blog-text__Text{
+        @extend %Text;
+        color: white;
+    }
+}
+}
+
+// 7 секция
+.wrapperFooter{
+    @extend %mainStyle;
+    min-height: 953px;
+    display: flex;
+    background-image: url('/Home_works/lesson14/part2/img/CaheeSection-7/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;;
+    .container{
+        @extend %containerStyle;
+        footer{
+      
+        .foterContact{
+            .footerText{
+                .footerTextContact{
+                    .footer__title{
+                        @extend %Title;
+                        margin-bottom: 5%;
+                        @media (max-width:900px){
+                            font-size: 60px;
+                        }
+                    }
+                    .footer__text{
+                        @extend %Text;
+                       
+                    }
+                }
+            }
+        }
+        .form{
+            margin-top: 3%;
+            display: flex;
+            flex-direction: column;
+            .footerForm{
+                margin: 0;
+                display: flex;
+            }
+            .formElement{
+                margin: 0;
+                .elementForm{
+                    padding-top: 3%;
+                    opacity: 0.8;
+                    &:first-child{
+                        padding-top: 0;
+                    }
+                    input{
+                        @media(max-width: 414px){
+                            width: 188px;
+                        }
+                        @media(max-width: 600px){
+                            width: 188px;
+                        }
+                        width: 500px;
+                        height: 50px;
+                        background-color: #77dbdc;
+                        padding-left: 20px;
+                        &::placeholder{
+                         @extend %placeHoleder-style;
+                        }
+                        &::-webkit-input-placeholder{
+                            @extend %placeHoleder-style-2;
+                        }
+                        &:focus{
+                            @extend %input-TextareaFocus;
+                        }
+                    }
+                    input[type~="text"], input[type~="email"], input[type~="tel"], textarea{
+                     font-size: 15px;
+                    }
+                    textarea{
+                        @media(max-width: 414px){
+                            width: 188px;
+                            height: 100px;
+                        }
+                        @media(max-width: 600px){
+                            width: 188px;
+                            height: 100px;
+                        }
+                        width: 500px;
+                        height: 250px;
+                        background-color: #77dbdc;
+                        padding-left: 20px;
+                        padding-top: 3%;
+                        &::placeholder{
+                            @extend %placeHoleder-style;
+                        }
+                        &::-webkit-input-placeholder{
+                            @extend %placeHoleder-style-2;
+                        }
+                        &:focus{
+                            @extend %input-TextareaFocus;
+                        }
+                    }
+                }
+                .button{
+                    button{
+                        margin-top: 5%;
+                        @extend %Button;
+                        background-color: black;
+                        box-shadow: $Box-shadow;
+                        &:hover{
+                         @extend %ButtonAnimation;
+                         background-color: teal;
+                        }
+                    }
+                }
+            }
+            .companyContacts{
+                @media(max-width: 414px){
+                  margin-left: 0;
+                }
+                @media(max-width: 900px){
+                    margin-left: 5%;
+                  }
+                  @media(max-width: 667px){
+                    margin-left: 1%;
+                  }
+                margin: 0;
+                margin-left: 15%;
+                text-align: left;
+                .companyContactsInformation{
+                    div{
+                        font-size: 17px;
+                        font-family: 'Raleway-Bold';
+                        padding-top: 5%;
+                        &:first-child{
+                            padding: 0;
+                        }
+                        p{
+                            font-family: 'Raleway-Light';
+                            padding-top: 2%;
+                            &:first-child{
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+//8 секция
+.Bottom{
+    background-color: #262626;
+    margin: 0;
+    height: 90px;
+    display: flex;
+    @media (max-width:600px){
+        min-height: 200px;
+        height: 0;
+    }
+   > .containerBottom{
+        @extend %containerStyle;
+        height: 90px;
+        @media (max-width:600px){
+         height: auto;
+           }
+        .BottomElement{
+            @media (max-width:600px){
+             flex-direction: column;
+             align-items: center;
+            }
+            display: flex;
+             width: 100%;
+            color: white;
+            opacity: 0.5;
+            justify-content: space-between;
+            .Bottom__LicenseText{
+                @extend %Text;
+            }
+            .Bottom__Logo{
+                @media (max-width:600px){
+                    margin-bottom: 5%;
+                    margin-top: 5%;
+                   }
+            }
+            .footerBottom__Logo, .footerBottom__creatorText, .footerBottom__LicenseText {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin: 0;
+              }
+              .Bottom__Logo{
+                font-family: 'Pacifico-Regular';
+                font-size: 25px;
+              }
+              .Bottom__creatorText {
+                line-height: 25px;
+              font-size: 15px;
+              font-family: 'Raleway-Light';
+              p > span{
+                color: #ff2b58;
+                font-size: 15px;
+                font-family: 'Raleway-Bold';
+                opacity: 1;
+              }
+              }
+            }
+    }
+}
+
+
+//Анимации
+.animate__animated.animate__pulse, .animate__animated.animate__heartBeat{
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
