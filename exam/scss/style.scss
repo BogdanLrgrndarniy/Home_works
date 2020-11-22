@@ -411,9 +411,13 @@ $transition-duration: 0.5s;
                 }
         
             }
+
+        }
+        .Why-Choose-Us__container{
             .Why-Choose-Us__photos{
                 width: 480px;
                 min-height: 450px;
+              
                 @media (min-width:320px) and (max-width:767px){
                     width: auto;
                     display: flex;
@@ -424,11 +428,14 @@ $transition-duration: 0.5s;
                         display: block;
                     }
 
-                .imgTwo {
-                    display: flex;
-                  flex-direction: column;
-                  align-items: flex-end;
-                  margin: 5px 0px 0px 0px;
+                .img-Two {
+                    @media(min-width:768px){
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        margin: 5px 0px 0px 0px;
+                    }
+                  
                   @media (min-width:320px) and (max-width:767px){
                     display: block;
                     margin: 0;
@@ -676,88 +683,89 @@ $transition-duration: 0.5s;
         .GrandSpain-Madrid-second{
             background-image: url('/Home_works/exam/images/GrandSpain-Madrid/GrandSpain-Madrid-second.png');
         }
-    } 
-
-    // 5 секция
-
-    .WhatOur-TouristSay{
-        min-height: 740px;
-        @extend  %backgroundimage-Style;
-        background-image: url('/Home_works/exam/images/WhatOur-TouristSay/WhatOur-TouristSay-background.png');
-
-        .container{
-            min-height: 580px;
-            @extend %containerStyle;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            @media (min-width:320px) and (max-width:767px){
-
-            }
-            .WhatOur-TouristSay__Title{
-               min-height: 250px;
-               @extend %Why-Choose-Us-Aleo-Regular;
-               display: flex;
-               flex-direction: column;
-               justify-content: center;
-            }
-            .WhatOur-TouristSay__content{
+        .WhatOur-TouristSay{
+            min-height: 740px;
+            @extend  %backgroundimage-Style;
+            background-image: url('/Home_works/exam/images/WhatOur-TouristSay/WhatOur-TouristSay-background.png');
+    
+            .container{
+                min-height: 580px;
+                @extend %containerStyle;
                 display: flex;
-                min-height: 280px;
-                width: 100%;
+                flex-direction: column;
+                justify-content: center;
                 @media (min-width:320px) and (max-width:767px){
-                    height: auto;
-                    width: auto;
-                    flex-direction: column;
+    
                 }
-                .WhatOur-TouristSay__photo{
-                    width: 40%;
-                    @media (min-width:320px) and (max-width:767px){
-                        width: auto;
-                    }
-                }
-                .WhatOur-TouristSay__TextContent{
-                    width: 60%;
-                   background-color: #333333;
+                .WhatOur-TouristSay__Title{
+                   min-height: 250px;
+                   @extend %Why-Choose-Us-Aleo-Regular;
                    display: flex;
-                    align-items: center;
-                    text-align: left;
-                    justify-content: center;
-                    @media (min-width:320px) and (max-width:767px){
-                        width: auto;
-                       
-                    }
-                   .WhatOur-TouristSay__text{
-                   width: 85%;
-                   @extend %FontStyle;
-                   min-height: 200px;
-                   @extend %flex-column-between;
-                   @media (min-width:320px) and (max-width:767px){
-                    min-height: 150px;
+                   flex-direction: column;
+                   justify-content: center;
                 }
-                   h3{
-                    font-size: 20px;
-                    font-family: 'JosefinSans-Regular';
-                    text-transform: uppercase;
-                   }
-                   p{
-                    font-size: 14px;
-                    text-align: left;
-                    font-family: 'JosefinSans-Regular';
-                    line-height: 26px;
-                    span{
-                        position: relative;
-                        bottom: 10px;
-                        right: 12px;
-                        font-size: 20px;
-                        line-height: 26px;
+                .WhatOur-TouristSay__content{
+                    display: flex;
+                    min-height: 280px;
+                    width: 100%;
+                    @media (min-width:320px) and (max-width:767px){
+                        height: auto;
+                        width: auto;
+                        flex-direction: column;
                     }
-                   }
+                    .WhatOur-TouristSay__photo{
+                        width: 40%;
+                        @media (min-width:320px) and (max-width:767px){
+                            width: auto;
+                        }
+                    }
+                    .WhatOur-TouristSay__TextContent{
+                        width: 60%;
+                       background-color: #333333;
+                       display: flex;
+                        align-items: center;
+                        text-align: left;
+                        justify-content: center;
+                        @media (min-width:320px) and (max-width:767px){
+                            width: auto;
+                           
+                        }
+                       .WhatOur-TouristSay__text{
+                       width: 85%;
+                       @extend %FontStyle;
+                       min-height: 200px;
+                       @extend %flex-column-between;
+                       @media (min-width:320px) and (max-width:767px){
+                        min-height: 150px;
+                    }
+                       h3{
+                        font-size: 20px;
+                        font-family: 'JosefinSans-Regular';
+                        text-transform: uppercase;
+                       }
+                       p{
+                        font-size: 14px;
+                        text-align: left;
+                        font-family: 'JosefinSans-Regular';
+                        line-height: 26px;
+                        span{
+                            position: relative;
+                            bottom: 10px;
+                            right: 12px;
+                            font-size: 20px;
+                            line-height: 26px;
+                        }
+                       }
+                    }
                 }
             }
         }
     }
-}
+    } 
+
+    // 5 секция
+
+
 
 // футер
     .footer{
