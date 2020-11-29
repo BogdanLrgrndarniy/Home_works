@@ -1,11 +1,4 @@
-let date = prompt("Ведите cвой год рождения");
+let name = prompt("Ведите имя");
 
-
-
-
-function get_current_age(date) {
-    return ((new Date().getTime() - new Date(date)) / (24 * 3600 * 365.25 * 1000)) | 0;
-  }
-  
-  alert(`Вам ${get_current_age}`);
-  
+alert(`Привет, ${name}!`);
+alert(message);
