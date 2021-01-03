@@ -107,10 +107,10 @@ let division = {
  
  
  // console.log(NOD(10, 25));
-//  console.log(division.additions())
-//  console.log(division.division())
-//  console.log(division.multiplication())
+ console.log(division.additions())
+ console.log(division.division())
+ console.log(division.multiplication())
 
 // ПРИ ВИЗОВІ ЦІЄЇ ФУНКЦІЇ ВИНИКАЯ ПОМИЛКА Uncaught RangeError: Maximum call stack size exceeded
- console.log(division.subtraction())
+//  console.log(division.subtraction())
  
