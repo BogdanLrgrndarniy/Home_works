@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'icomoon-about-Sublime__Icon';
+  src:  url('fonts/icomoon-about-Sublime__Icon.eot?vdw9o0');
+  src:  url('fonts/icomoon-about-Sublime__Icon.eot?vdw9o0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon-about-Sublime__Icon.ttf?vdw9o0') format('truetype'),
+    url('fonts/icomoon-about-Sublime__Icon.woff?vdw9o0') format('woff'),
+    url('fonts/icomoon-about-Sublime__Icon.svg?vdw9o0#icomoon-about-Sublime__Icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-about-Sublime__Icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gamepad:before {
+  content: "\e900";
+}

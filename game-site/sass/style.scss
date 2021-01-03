@@ -32,13 +32,19 @@ $general-color: #FFC700;
     font-family: 'MyriadPro-Regular';
     src: url('/Home_works/game-site/fonts/MyriadPro/MyriadPro-Regular.ttf');
     src: url('/Home_works/game-site/fonts/MyriadPro/MyriadPro-Bold.woff');
-    font-style: Bold;
+    font-style: Regular;
 }
 
 @font-face {
     font-family: 'MyriadPro-Semibold';
     src: url('/Home_works/game-site/fonts/MyriadPro/MyriadPro-Semibold.ttf');
     src: url('/Home_works/game-site/fonts/MyriadPro/MyriadPro-Semibold.woff');
+    font-style:Semibold;
+}
+
+@font-face {
+    font-family: 'MyriadPro-Italic';
+    src: url('/Home_works/game-site/fonts/MyriadPro/italic.ttf');
     font-style: Bold;
 }
 
@@ -146,12 +152,12 @@ main{
     .about-Sublime {
         background-color: white;
         max-width: 1200px;
-        min-height: 520px;
+        min-height: 550px;
         display: flex;
       
         align-items: flex-end;
         flex-direction: column;
-        .about-Sublime__container{
+        .about-Sublime__containerText{
             // max-width: 1130px;
             display: flex;
             align-items: flex-end;
@@ -198,7 +204,46 @@ main{
                 }
             }
         }
-        
+        .about-Sublime__containerIcons{
+            margin-top: 70px;
+            max-width: 890px;
+            width: 100%;
+            text-align: center;
+            .about-Sublime__Icons{
+                display: flex;
+                .about-Sublime__IconDescription{
+                    .about-Sublime__Icon{
+                        background-color: #E8E8E8;
+                        border: 2px solid #ffb200;
+                        height: 60px;
+                        width: 60px;
+                        border-radius: 50%;
+                        font-size: 35px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        :hover{
+                            color:#ffb200;
+                            cursor: pointer;
+                        }
+                    }
+                    .about-Sublime__IconTitle{
+                        @include generalTextStyle;
+                        margin-top: 25px;
+                    }
+                    .about-Sublime__IconText{
+                        font-size: 10px;
+                        font-family: 'MyriadPro-Italic';
+                        margin-top: 25px;
+                        
+                            :last-child{
+                                padding-top: 20px;
+                            }
+                        
+                    }
+                }
+            }
+        }
     }
 }
 
