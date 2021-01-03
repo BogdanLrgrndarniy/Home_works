@@ -1,0 +1,55 @@
+*{
+    margin: 0 auto;
+}
+
+.trafficLights{
+height: 350px;
+width: 150px;
+background-color: rgb(61, 61, 61);
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+.changecolor {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+}
+.changecolor {
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+}
+.changecolor{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.changecolor.red{
+    background-color: red;
+}
+.changecolor.yellow{
+    background-color: yellow;
+}
+
+.changecolor.green{
+    background-color: green;
+}
+
+
+button{
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+
+button:hover{
+    cursor: pointer;;
+}
