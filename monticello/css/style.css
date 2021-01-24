@@ -87,11 +87,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans", sans-serif;
   src: url("/Home_works/monticello/fonts/latestNews/openSans/OpenSans-Regular.ttf");
 }
-@font-face {
-  font-family: "Gotham-medium";
-  src: url("/Home_works/monticello/fonts/Gotham Medium Regular.ttf");
-  src: url("/Home_works/monticello/fonts/gotham-medium-webfont.woff");
-}
 .news {
   background-image: url("/Home_works/monticello/images/latest-news/BgTwo.png");
   height: 1035px;
@@ -531,6 +526,10 @@ h1, h2, h3, h4, h5, h6 {
   src: url("/Home_works/monticello/fonts/Gotham Medium Regular.ttf");
   src: url("/Home_works/monticello/fonts/gotham-medium-webfont.woff");
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-image: url("/Home_works/monticello/images/header/Bg.png");
   height: 801px;
@@ -548,6 +547,29 @@ h1, h2, h3, h4, h5, h6 {
   .header {
     height: 600px;
   }
+}
+.header .header__scrollTop {
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  position: fixed;
+  padding: 0;
+  z-index: 111;
+  bottom: 120px;
+  right: 50px;
+  display: none;
+}
+.header .header__scrollTop :hover {
+  border-color: white;
+  cursor: pointer;
+}
+.header .header__scrollTop img {
+  height: 40px;
+  width: 40px;
+}
+.header .shown {
+  display: block;
 }
 .header .header__container {
   max-width: 1170px;

@@ -15,11 +15,7 @@
     src: url('/Home_works/monticello/fonts/latestNews/openSans/OpenSans-Regular.ttf');
 }
 
-@font-face{
-  font-family: 'Gotham-medium';
-  src: url('/Home_works/monticello/fonts/Gotham Medium Regular.ttf');
-  src: url('/Home_works/monticello/fonts/gotham-medium-webfont.woff');
-}
+
 @mixin backGroundStyle {
     background-repeat: no-repeat;
     overflow: hidden;
