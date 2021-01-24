@@ -1,0 +1,354 @@
+@import "null.scss";
+@import "latestNews";
+@import "gallery";
+@import "GoogleMap";
+@import "form";
+@import "footer";
+
+@font-face{
+  font-family: 'Gotham-bold';
+  src: url('/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.woff');
+}
+@font-face{
+  font-family: 'Gotham-book';
+  src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.woff');
+  src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.ttf');
+}
+@font-face{
+  font-family: 'Gotham-medium';
+  src: url('/Home_works/monticello/fonts/Gotham Medium Regular.ttf');
+  src: url('/Home_works/monticello/fonts/gotham-medium-webfont.woff');
+}
+
+@mixin burgerBtnStyle {
+  content: "";
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+}
+
+@mixin backGroundStyle {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+@mixin latestNews {
+  
+}
+
+.header {
+  background-image: url("/Home_works/monticello/images/header/Bg.png");
+  height: 801px;
+  @include backGroundStyle;
+  transition: background 500ms linear;
+  @media (max-width: 1176px) {
+    height: 700px;
+  }
+  @media (max-width: 700px) {
+    height: 600px;
+  }
+  .header__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    @media (max-width: 1176px) {
+      max-width: 700px;
+    }
+    .header__top {
+      padding-top: 50px;
+      justify-content: space-evenly;
+      display: flex;
+      @media (min-width: 1176px) {
+        justify-content: space-evenly;
+      }
+      .header_logo {
+        @media (max-width: 1176px) {
+          width: 75px;
+          height: 50px;
+          position: relative;
+          right: -54px;
+        }
+      }
+      .header__burger {
+        display: none;
+
+        @media (max-width: 1176px) {
+          z-index: 15;
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 20px;
+          left: 260px;
+          top: 15px;
+          cursor: pointer;
+          :before {
+            transition: all 0.4s ease;
+            top: -9px;
+            @include burgerBtnStyle;
+          }
+          :after {
+            transition: all 0.4s ease;
+            bottom: -9px;
+            @include burgerBtnStyle;
+          }
+          span {
+            transition: all 0.1s ease;
+            position: absolute;
+            background-color: white;
+            height: 2px;
+            width: 100%;
+            top: 9px;
+          }
+        }
+      }
+      .active {
+        top: 0;
+        ::before {
+          transform: rotate(45deg);
+          top: -1px;
+        }
+        ::after {
+          transform: rotate(-45deg);
+          top: -1px;
+        }
+      }
+      .active {
+        span {
+          background-color: transparent;
+        }
+      }
+      img {
+        width: 260px;
+        height: 60px;
+        background-size: cover;
+      }
+    }
+    .header__navMenu {
+      display: flex;
+      margin-left: 88px;
+      @media (max-width: 1176px) {
+        margin-left: 40px;
+        left: -100%;
+        transition: all 0.4s ease;
+      }
+      @media (max-width: 1176px) {
+        position: fixed;
+        left: -40px;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        justify-content: center;
+        transition: all 0.7s ease;
+        opacity: 0.6;
+        z-index: 10;
+        top: -100%;
+      }
+      .menu {
+        @media (max-width: 1176px) {
+          // display: none;
+        }
+        @media (max-width: 1176px) {
+          justify-content: center;
+          /* display: block; */
+          display: flex;
+          flex-direction: column;
+        }
+      }
+
+      // анимация для кнопки бургер
+
+      ul {
+       
+        display: inline-flex;
+        @media (max-width: 1176px) {
+        }
+        :first-child {
+          margin-left: 0px;
+        }
+        .header__navMenuLiMarginLeftNull {
+          @media (max-width: 1176px) {
+            // margin-left: 67px;
+          }
+        }
+        li {
+          @media (max-width: 1176px) {
+            margin-left: 0;
+          }
+          margin-left: 67px;
+          margin-top: 15px;
+          .circle {
+            position: relative;
+            top: 12px;
+            left: -13px;
+            width: 12px;
+            height: 12px;
+            border: 1px white solid;
+            border-radius: 50%;
+          }
+          span {
+            font-family: 'Gotham-book';
+           
+            font-size: 13px;
+            padding-left: 13px;
+            a{
+              color: white;
+            }
+          }
+        }
+        .li-Active {
+          .circle {
+            background-color: white;
+          }
+        }
+      }
+    }
+
+    .header__socialMediaIcons {
+      display: inline-flex;
+      align-items: center;
+      color: white;
+      margin-left: 118px;
+      @media (max-width: 1176px) and (min-width: 701px) {
+        position: relative;
+        left: 80px;
+      }
+      @media (max-width: 700px) {
+        position: relative;
+        bottom: 44px;
+        left: -42px;
+      }
+      .iconSocialMediaIcons {
+        :hover {
+          cursor: pointer;
+          color: black;
+          border-color: black;
+        }
+        .icon-arrowDownfacebookfa {
+          padding-left: 20px;
+          font-size: 40px;
+          @media (max-width: 700px) {
+            font-size: 30px;
+          }
+        }
+        .icon-arrowDowntwitterfa {
+          padding-left: 20px;
+          font-size: 40px;
+          @media (max-width: 700px) {
+            font-size: 30px;
+          }
+        }
+        .icon-arrowDowninstagram-1fa {
+          font-size: 40px;
+          padding-left: 20px;
+          @media (max-width: 700px) {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+    .header__Title {
+      text-align: center;
+      text-transform: uppercase;
+      color: white;
+      margin-top: 270px;
+      @media (max-width: 1176px) {
+        margin-top: 80px;
+      }
+      h1 {
+        font-family: 'Gotham-bold';
+        font-size: 80px;
+        @media (max-width: 1176px) {
+          font-size: 60px;
+        }
+      }
+      p {
+        letter-spacing: 7px;
+        font-family: 'Gotham-book';
+        font-size: 18px;
+        margin-top: 40px;
+      }
+      .changeBackGround-Items {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        cursor: pointer;
+
+        :first-child {
+          @media (max-width: 1176px) {
+            margin-left: 0px;
+          }
+        }
+
+        @media (max-width: 1176px) {
+          flex-direction: inherit;
+          justify-content: center;
+          margin-top: 70px;
+        }
+      }
+      .changeBackGround-Items__circle {
+        @media (max-width: 1176px) {
+          position: inherit;
+          margin-top: 0;
+          margin-left: 20px;
+        }
+        position: relative;
+        width: 12px;
+        height: 12px;
+        border: 1px white solid;
+        border-radius: 50%;
+        top: -229px;
+        left: -36px;
+        margin-top: 40px;
+      }
+      .li-Active {
+        background-color: white;
+      }
+    }
+    .header__down-arrow {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin-top: 10px;
+      @media (max-width: 1176px) and (min-width: 501px) {
+        margin-top: 250px;
+      }
+      @media (max-width: 500px) {
+        margin-top: 85px;
+      }
+
+      .header__down-arrow_borderHoverStyle {
+        position: relative;
+        top: -50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px white solid;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        span {
+          color: white;
+        }
+        :hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+// класы для Изменения фонового фото .
+.active-changeBackGround {
+  background-image: url("/Home_works/monticello/images/header/BgTwo.png");
+  // min-height: 801px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  transition: background 300ms linear;
+}
+
+// /Home_works/monticello
+
+

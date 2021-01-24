@@ -1,0 +1,119 @@
+@font-face{
+    font-family: 'Gotham-bold';
+    src: url('/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.woff');
+    src: url('/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.ttf');
+}
+@font-face{
+    font-family: 'Gotham-book';
+    src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.woff');
+    src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@font-face{
+    font-family: 'Open Sans', sans-serif;
+    src: url('/Home_works/monticello/fonts/latestNews/openSans/OpenSans-Regular.ttf');
+}
+
+@font-face{
+  font-family: 'Gotham-medium';
+  src: url('/Home_works/monticello/fonts/Gotham Medium Regular.ttf');
+  src: url('/Home_works/monticello/fonts/gotham-medium-webfont.woff');
+}
+@mixin backGroundStyle {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+  }
+  
+
+.news {
+    background-image: url("/Home_works/monticello/images/latest-news/BgTwo.png");
+    height: 1035px;
+    @include backGroundStyle;
+    .news__container {
+      max-width: 1170px;
+      margin: 0 auto;
+      .news__text {
+        .news__title {
+          margin-top: 180px;
+          text-align: center;
+          color: white;
+          span {
+            position: absolute;
+            height: 1px;
+            width: 100px;
+            background-color: white;
+            margin-bottom: -45px;
+            margin: -43px -67px -27px -50px;
+          }
+  
+          h2 {
+            font-size: 44px;
+            line-height: 22px;
+            font-family: 'Gotham-medium';
+          }
+        }
+      }
+      .autoPlaySlider {
+        height: 600px;
+        margin-top: 110px;
+        margin-left: 17px;
+        button{
+            .slick-prev:before{
+                position: relative;
+                right: 17px;
+            }
+        }
+        .autoPlaySlider__element{
+        //   margin-left: 10px;
+        }
+        div {
+          .sliderImg {
+            height: 250px;
+            width: 370px;
+          }
+          .textNews{
+            background-color: white;
+            width: 370px;
+            min-height: 270px;
+            padding-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            .textNews__title{
+              font-size: 22px;
+              line-height: 34px;
+              font-family: 'Gotham-bold';
+              text-transform: uppercase;
+            }
+            .textNews__text {
+              font-size: 18px;
+              font-family: 'Open Sans', sans-serif;
+            }
+            .textNews__img {
+              display: flex;
+              .textNewsImg__text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: 20px;
+                h2{
+                  font-size: 18px;
+                text-transform: uppercase;
+                font-family: 'Gotham-book';
+                }
+                p{
+                  padding-top: 15px;
+                  color: #55b7ff;
+                  font-size: 14px;
+                  font-family: 'Gotham-book';
+                }
+              }
+            }
+          }
+  
+        }
+      }
+    }
+  }

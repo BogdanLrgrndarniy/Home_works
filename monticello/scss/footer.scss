@@ -1,0 +1,110 @@
+@mixin backGroundStyle {
+    background-repeat: no-repeat;
+    // overflow: hidden;
+    background-size: cover;
+  }
+
+.footer{
+    @include backGroundStyle;
+    height: 520px;
+    background-image: url('/Home_works/monticello/images/footer/Frame.png');
+    .footer__container{
+        max-width: 770px;
+    @media(max-width:1176px){
+        justify-content: inherit;
+    }
+        max-width: 685px;
+        margin: 0 auto;
+        position: relative;
+        bottom: 254px;
+        display: flex;
+        justify-content: space-between;
+        .footer__leftContent{
+            .footer__logo{
+                img{
+                    width: 260px;
+                    height: 60px;
+                    background-size: cover;
+                  }
+                    @media (max-width: 1176px) {
+                        width: 75px;
+                        height: 50px;
+                        position: relative;
+                        right: -54px;
+            
+                    }
+            }
+            .footer__text{
+                color: white;
+                display: flex;
+                margin-top: 40px;
+                text-align: center;
+                .footer__text-verticalLine{
+                    background-color: rgb(255, 255, 255);
+                    width: 1px;
+                    height: 20px;
+                    margin-left: 20px;
+                    opacity: 0.7;
+                }
+                :nth-child(3){
+                    margin-left: 20px;
+                    display: flex;
+                    align-items: center;
+                }
+                p{
+                    font-size: 14px;
+                    line-height: 22px;
+                    img{
+                        height: 15px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+        .footer__rightContent{
+            .footer__socialMediaIcons {
+                display: inline-flex;
+                align-items: center;
+                color: white;
+                
+                @media (max-width: 1176px) and (min-width: 701px) {
+                  position: relative;
+                  left: 80px;
+                }
+                @media (max-width: 700px) {
+                  position: relative;
+                  bottom: 44px;
+                  left: -42px;
+                }
+                .iconSocialMediaIcons {
+                  :hover {
+                    cursor: pointer;
+                    color: black;
+                    border-color: black;
+                  }
+                  .icon-arrowDownfacebookfa {
+                    padding-left: 20px;
+                    font-size: 40px;
+                    @media (max-width: 700px) {
+                      font-size: 30px;
+                    }
+                  }
+                  .icon-arrowDowntwitterfa {
+                    padding-left: 20px;
+                    font-size: 40px;
+                    @media (max-width: 700px) {
+                      font-size: 30px;
+                    }
+                  }
+                  .icon-arrowDowninstagram-1fa {
+                    font-size: 40px;
+                    padding-left: 20px;
+                    @media (max-width: 700px) {
+                      font-size: 30px;
+                    }
+                  }
+                }
+              }
+        }
+    }
+}
