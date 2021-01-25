@@ -1,21 +1,20 @@
 function validate() {
     let a = document.forms["myForm"]["nameCompany"].value;
-  if (a == "") {
+    let с = document.forms["myForm"]["email"].value;
+  if (a == "" && с == "") {
     alert("Укажите ваше имя");
+    alert("Укажите ваш Е-майл");
     return false;
   }
-  if(a !== "" && c == ''){
-    alert('Ведите емейл');
-    return fasle;
-}
+  
   let b = document.forms["myForm"]["last_name"].value;
   if (b == "") {
     alert("Укажите вашу фамилию");
     return false;
   }
-  let с = document.forms["myForm"]["email"].value;
-  if (с == "") {
-    alert("Укажите ваш Е-майл");
+
+  if () {
+
     return false;
   }
 
