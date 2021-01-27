@@ -1,0 +1,254 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url("/Home_works/java-Script/lesson33/task1/img/background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  display: flex;
+}
+
+.farCryTab {
+  width: 800px;
+  background-color: #212534;
+  min-height: 540px;
+}
+
+.changeInformation {
+  min-height: 115px;
+  background-color: #2b3040;
+  display: flex;
+  align-items: center;
+}
+
+.icon.active {
+  color: white;
+}
+
+span {
+  color: #8d91a3;
+  font-size: 30px;
+}
+
+span:hover {
+  cursor: pointer;
+}
+
+.icon {
+  color: grey;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  margin-top: 15px;
+  line-height: 16px;
+  flex: 1 1 auto;
+}
+
+p:hover {
+  cursor: pointer;
+}
+
+.whileLineActive {
+  height: 2px;
+  width: 150px;
+  background-color: white;
+  position: relative;
+  top: 40px;
+}
+
+.starRating > img {
+  padding-left: 50px;
+  padding-top: 60px;
+}
+
+.farCryTab-description {
+}
+.farCryTab-description__flexContainer {
+  display: flex;
+}
+.farCryTab-description__img {
+  margin: 0;
+}
+
+.farCryTab-description__text {
+  margin: 0;
+  margin-left: 40px;
+  margin-top: 72px;
+  color: white;
+  height: 200px;
+}
+.farCryTab-description__text > h1 {
+  font-size: 32px;
+}
+
+.farCryTab-description__text > p {
+  text-align: left;
+  color: grey;
+  line-height: 22px;
+}
+
+html {
+  background: #333;
+  background: radial-gradient(#333, #000);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#rating {
+  top: 40%;
+  margin: 0;
+  width: 140px;
+  margin-left: 71px;
+  margin-top: 8px;
+}
+
+#rating span {
+  cursor: pointer;
+  font-size: 25px;
+  /* padding: 0 10px; */
+  color: #fff;
+  opacity: 0.5;
+  transition: all 150ms;
+  display: inline-block;
+
+  transform-origin: center bottom;
+}
+
+#rating span.hover {
+  color: #ff0;
+  opacity: 1;
+  transform: rotateX(0deg);
+  text-shadow: 0 0 30px #ffc;
+}
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.circle > div {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.outer {
+  border: green solid 6px;
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    0 0,
+    50% 0,
+    50% 50%,
+    50% 50%
+  );
+}
+
+.inner {
+  transform: scale(0.95);
+  background-color: inherit;
+}
+
+.circle .outer {
+  clip-path: polygon(
+    50% 0%,
+    100% 0,
+    100% 100%,
+    0 100%,
+    0 100%,
+    0 0,
+    0 0,
+    50% 50%,
+    50% 50%
+  );
+}
+
+.progress-ring__circle {
+  stroke-width: 4;
+  stroke: #19e683;
+  fill: none;
+  transform-origin: center;
+  transform: rotate(-80deg);
+}
+
+.progress-ring {
+  margin-top: 15px;
+}
+
+.cicrleText {
+  position: relative;
+  right: 76px;
+  top: 0px;
+  font-size: 30px;
+  margin-top: 70px;
+  color: grey;
+}
+
+.farCryTab__price {
+  position: relative;
+  bottom: 33px;
+}
+
+.farCryTab__priceContainer {
+  max-width: 315px;
+  display: flex;
+  padding-left: 30px;
+  justify-content: space-between;
+}
+
+.farCryTab__buttonBuy {
+  margin-left: 50px;
+}
+.farCryTab__buttonBuy > button {
+  width: 165px;
+  height: 55px;
+  background-color: #13e28d;
+  border: 1px solid #13e28d;
+  border-radius: 3%;
+}
+
+.farCryTab__priceDiscount {
+  margin-left: 14px;
+}
+.farCryTab__priceDiscount > span {
+  font-size: 12px;
+  color: #fedc3f;
+}
+
+.farCryTab__priceDiscount > p {
+  font-size: 32px;
+  color: white;
+}
+
+/* for js */
+
+.farCryTab-description {
+  display: none;
+}
+
+.farCryTab-description.is-active {
+  display: block;
+}
+
+.tab.is-active span {
+}
