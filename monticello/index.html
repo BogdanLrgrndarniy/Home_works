@@ -210,7 +210,7 @@
           <span></span>
           <h2>GET IN TOUCH</h2>
         </div>
-        <form name="myForm" action="post"  onsubmit="return validate()">
+        <form name="myForm" action="post" id='dataUser' onSubmit="return formValidation();">
           <div class="form__contacts">
             <p><span class="icon icon-arrowDownmap-markerfa"></span>91 Nolan Extensions Suite 670</p>
             <p><span class="icon icon-arrowDownphonefa"></span><a href="tel:+0013568682454">+001 356-868-2454</a></p>
@@ -219,13 +219,15 @@
           </div>
           <div class="form__element">
             <input type="text" name="nameCompany" placeholder="Mollie Medina" id="nameCompany">
+            <p class="errorUserName"></p>
             <span class="form__elemt-Line"></span>
            
             <input class="email" type="email" name="email" placeholder="Email" id="emailUsername">
             <span  class="form__elemt-Line form__elemt-Line-LineSecond"></span>
             <div class="form__ButtonSubmit">
               <div>
-                <input type="submit" value="SUBMIT">
+                <input type="submit" value="SUBMIT" id='submitButton'>
+              
               </div>
               
             </div>

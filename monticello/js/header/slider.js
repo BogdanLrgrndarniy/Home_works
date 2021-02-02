@@ -5,8 +5,26 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        dots: true
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              arrows: false
+            }
+          }
+        ]
       });
+
+
   
       function resizeWidthOnly(a,b) {  
         var c = [window.innerWidth];

@@ -13,7 +13,7 @@ $(document).ready(function () {
       }
       
       /* используйте функцию resizeWidthOnly вместо window.onresize   */
-      $('.gallery__grid').css({'display': 'grid', 'margin-top': '110px'})
+      // $('.gallery__grid').css({'display': 'grid', 'margin-top': '110px'})
       resizeWidthOnly(function() {
           if(window.innerWidth < 1176){
             $('.gallery__grid').css({'display': 'flex', 'margin-top': '110px'})

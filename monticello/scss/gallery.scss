@@ -30,7 +30,14 @@
       grid-template-rows: 214px 214px;
       row-gap: 10px;
       column-gap: 10px;
-    //   margin-top: 110px;
+      @media(max-width:767px){
+        display: flex;
+        margin-top: 110px;
+      }
+      @media(min-width:768px){
+        display: grid;
+        margin-top: 110px;
+      }
       div{
           img{
             transition: all 0.4s ease;
