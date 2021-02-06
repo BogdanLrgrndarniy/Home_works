@@ -1,0 +1,81 @@
+@font-face{
+    font-family: 'Poppins-Bold';
+    src: url('/Home_works//java-Script/lesson34/fonts/Poppins-SemiBold.ttf');
+}
+
+.Text{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Title > h1{
+    font-size: 86px;
+    line-height: 90px;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.text-Itemagger{
+    position: relative;
+    left: 250px;
+}
+
+.text-Itemtriangle{
+    position: relative;
+    right: 20px;
+    top: 20px;
+}
+.Title > p {
+    font-size: 18px;
+    line-height: 19.7px;
+    font-family: 'Poppins-Bold';
+}
+
+div > .sliderImg{
+    width: 300px;
+    height: 350px;
+}
+
+.slickSlider{
+    min-height: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.autoPlaySlider{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   max-width: 1100px;
+   margin: 0 auto;
+}
+
+.slickSlider__container{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.arrow_prev:hover, .arrow_next{
+    cursor: pointer;
+}
+
+.slick-slide {
+    margin: 0 20px;
+  }
+  .slick-list {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
+/* .sliderImg:first-child{
+    margin-left: 0;
+} */
+
+.backGroundImg{
+     background-image: url('/Home_works/java-Script/lesson34/img/Rectangle\ 8.png');
+     height: 400px;
+     width: 440px;
+}
