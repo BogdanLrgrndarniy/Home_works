@@ -542,7 +542,7 @@ html {
 }
 
 .header {
-  background-image: url("/Home_works/monticello/images/header/Bg.png");
+  background-image: url("/Home_works/monticello/images/header/Bg.webp");
   height: 801px;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -888,7 +888,7 @@ html {
 }
 
 .active-changeBackGround {
-  background-image: url("/Home_works/monticello/images/header/BgTwo.png");
+  background-image: url("/Home_works/monticello/images/header/BgTwo.webp");
   background-repeat: no-repeat;
   overflow: hidden;
   background-size: cover;

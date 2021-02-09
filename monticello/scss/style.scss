@@ -41,7 +41,7 @@ html {
   scroll-behavior: smooth;
 }
 .header {
-  background-image: url("/Home_works/monticello/images/header/Bg.png");
+  background-image: url("/Home_works/monticello/images/header/Bg.webp");
   height: 801px;
   @include backGroundStyle;
   transition: background 500ms linear;
@@ -370,7 +370,7 @@ html {
 
 // класы для Изменения фонового фото .
 .active-changeBackGround {
-  background-image: url("/Home_works/monticello/images/header/BgTwo.png");
+  background-image: url("/Home_works/monticello/images/header/BgTwo.webp");
   // min-height: 801px;
   background-repeat: no-repeat;
   overflow: hidden;
