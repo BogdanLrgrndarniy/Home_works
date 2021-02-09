@@ -77,15 +77,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Gotham-bold";
   src: url("/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.woff");
   src: url("/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Gotham-book";
   src: url("/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.woff");
   src: url("/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Open Sans", sans-serif;
   src: url("/Home_works/monticello/fonts/latestNews/openSans/OpenSans-Regular.ttf");
+  font-display: swap;
 }
 .news {
   background-image: url("/Home_works/monticello/images/latest-news/BgTwo.png");
@@ -526,16 +529,19 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Gotham-bold";
   src: url("/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.woff");
+  font-display: swap;
 }
 @font-face {
   font-family: "Gotham-book";
   src: url("/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.woff");
   src: url("/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.ttf");
+  font-display: swap;
 }
 @font-face {
   font-family: "Gotham-medium";
   src: url("/Home_works/monticello/fonts/Gotham Medium Regular.ttf");
   src: url("/Home_works/monticello/fonts/gotham-medium-webfont.woff");
+  font-display: swap;
 }
 html {
   scroll-behavior: smooth;

@@ -2,17 +2,20 @@
     font-family: 'Gotham-bold';
     src: url('/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.woff');
     src: url('/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.ttf');
+    font-display: swap;
 }
 @font-face{
     font-family: 'Gotham-book';
     src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.woff');
     src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.ttf');
+    font-display: swap;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face{
     font-family: 'Open Sans', sans-serif;
     src: url('/Home_works/monticello/fonts/latestNews/openSans/OpenSans-Regular.ttf');
+    font-display: swap;
 }
 
 

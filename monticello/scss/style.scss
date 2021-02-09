@@ -8,16 +8,19 @@
 @font-face{
   font-family: 'Gotham-bold';
   src: url('/Home_works/monticello/fonts/latestNews/gothambold/gothambold1.woff');
+  font-display: swap;
 }
 @font-face{
   font-family: 'Gotham-book';
   src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.woff');
   src: url('/Home_works/monticello/fonts/latestNews/GothamBook/GothamBook.ttf');
+  font-display: swap;
 }
 @font-face{
   font-family: 'Gotham-medium';
   src: url('/Home_works/monticello/fonts/Gotham Medium Regular.ttf');
   src: url('/Home_works/monticello/fonts/gotham-medium-webfont.woff');
+  font-display: swap;
 }
 
 @mixin burgerBtnStyle {
