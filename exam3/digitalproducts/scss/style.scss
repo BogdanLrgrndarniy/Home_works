@@ -1,0 +1,358 @@
+@import "null";
+@import "aboutUs";
+@import "recentWorks";
+@import "ourTeam";
+@import "getInTouch";
+
+
+@mixin backGroundStyle {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.header {
+  background-image: url("/Home_works/exam3/digitalproducts/images/header/DeathtoStock_Wired7.png");
+  height: 1070px;
+  @include backGroundStyle;
+}
+
+.header__container {
+  max-width: 1110px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.header__topContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  width: 100%;
+}
+
+.header__topContentFixed{
+  position: fixed;
+  background-color: rgb(169, 165, 192);
+  width: 100%;
+  left: 0;
+  height: 80px;
+  z-index: 5;
+}
+
+.header__logoFixed{
+  position: fixed;
+  left: 245px;
+
+}
+
+.header__logo {
+  font-size: 60px;
+  @media(max-width:960px){
+    display: none;
+  }
+  :hover::before {
+    color: rgb(102, 24, 24);
+    cursor: pointer;
+  }
+}
+
+
+.header__navMenuFixed{
+  z-index: 5;
+  position: fixed; 
+  right: 245px;
+}
+.header__navMenu {
+
+  // top: 0; 
+  // width: 100%; 
+  right: 245px;
+  @keyframes slidein {
+    from {
+      margin-left: 50%;
+      width: 300%;
+    }
+
+    to {
+      margin-left: 30%;
+      width: 100%;
+    }
+  }
+  @media (max-width: 960px) {
+    display: none;
+  }
+  @media (min-width: 960px) {
+    animation-duration: 0.5s;
+    animation-name: slidein;
+  }
+  ul {
+    display: inline-flex;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    li {
+      margin-left: 30px;
+      :hover {
+        color: rgb(0, 0, 0);
+      }
+      font-size: 15px;
+      font-family: "Gotham-book";
+      display: inline-block;
+      line-height: 1;
+      text-decoration: none;
+      cursor: pointer;
+      position: relative;
+      :after {
+        display: block;
+        content: "";
+        background-color: #000000;
+        height: 3px;
+        width: 0%;
+        left: 50%;
+        bottom: -5px;
+        position: absolute;
+        -webkit-transition: width 0.3s ease-in-out;
+        -moz--transition: width 0.3s ease-in-out;
+        transition: width 0.3s ease-in-out;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+      :hover:after,
+      :focus:after {
+        width: 100%;
+      }
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.header__textContent {
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  height: 70%;
+  .header__title {
+    font-size: 72.22px;
+    text-transform: uppercase;
+    line-height: 60.22px;
+  }
+  .header__text {
+    font-size: 30.09px;
+    padding-top: 35px;
+  }
+}
+
+//Burger Menu
+@mixin position-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+$bp-small: 500px;
+$bp-arrow: 700px;
+$font-primary: "Lusitana", sans-serif;
+$color: #000000;
+$color-bg: #fcfcf4;
+$color-dark: darken($color, 10%);
+$color-lite: lighten($color, 10%);
+
+.burgerButton {
+  display: none;
+  @media (min-width: 320px) and (max-width: 960px) {
+    display: block;
+  }
+}
+.menu-toggle {
+  opacity: 0.6;
+  background-color: transparent;
+  position: fixed;
+  z-index: 2;
+  top: 27px;
+  right: 25px;
+  border: none;
+  width: 36px;
+  height: 30px;
+  outline: none;
+  transition: opacity 0.2s ease-out;
+  &:before {
+    content: "";
+    @include position-center;
+    right: auto;
+    width: 100%;
+    background: linear-gradient(
+      to bottom,
+      $color,
+      $color 20%,
+      transparent 20%,
+      transparent 40%,
+      $color 40%,
+      $color 60%,
+      transparent 60%,
+      transparent 80%,
+      $color 80%,
+      $color 100%
+    );
+    transition: opacity 0.2s ease-out, width 0.2s 0.2s ease-out;
+  }
+  &:after {
+    opacity: 0;
+    content: "×";
+    color: white;
+    position: absolute;
+    top: 16px;
+    left: -4px;
+    font-family: Arial, sans-serif;
+    font-size: 76px;
+    line-height: 0;
+    transition: opacity 0.4s ease-out;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+  &:hover {
+    opacity: 1;
+  }
+  .open & {
+    opacity: 1;
+    &:before {
+      opacity: 0;
+      width: 0;
+    }
+    &:after {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) rotate(360deg);
+      transition: transform 0.4s 1s ease-out, opacity 0.4s 1s ease-out;
+    }
+  }
+}
+
+.burgerMenu {
+  z-index: 1;
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  overflow: hidden;
+  &:before {
+    content: "";
+    @include position-center;
+    background: rgba($color-dark, 0.98);
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 100%;
+    transform: scale(0.04), translateY(9999px);
+    overflow: hidden;
+  }
+  .open & {
+    top: 0;
+
+    @media (min-width: 960px) {
+      display: none;
+    }
+    &:before {
+      animation: menu-animation 0.8s ease-out forwards;
+    }
+  }
+}
+
+.menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  backface-visibility: hidden;
+  perspective: 1000;
+  color: white;
+  font-size: 25px;
+  li {
+    margin-top: 10px;
+    opacity: 0;
+    text-align: center;
+    transform: translate3d(0, 36px, 0);
+    transition: transform 0.1s ease-out, opacity 0.1s ease-out;
+    &:hover {
+      cursor: pointer;
+      background-color: yellowgreen;
+      transform: translate(-24px, 6px);
+
+      &:before {
+        left: 0;
+        right: auto;
+        width: 100%;
+      }
+      &:after {
+        opacity: 1;
+        padding: 0 20px;
+        transform: translate(0px, 6px);
+        transition: transform 0.2s 0.14s ease-out, opacity 0.2s 0.14s ease-out;
+      }
+    }
+    .open & {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+      @for $i from 1 to 6 {
+        &:nth-child(#{$i}) {
+          transition-delay: $i * 0.1s + 0.65s;
+        }
+      }
+    }
+  }
+}
+
+article {
+  padding: 24px;
+  max-width: 600px;
+  margin: 60px auto;
+  transition: 0.2s ease-out;
+  .open & {
+    transform: scale(0.92);
+    transition: transform 0.2s 0.41s ease-out;
+  }
+}
+
+@keyframes menu-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0.04) translateY(300%);
+  }
+  40% {
+    transform: scale(0.04) translateY(0);
+    transition: ease-out;
+  }
+  40% {
+    transform: scale(0.04) translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(0.02) translateY(0px);
+  }
+  61% {
+    transform: scale(0.04);
+  }
+  99.9% {
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 100%;
+  }
+  100% {
+    transform: scale(2);
+    height: 100%;
+    padding-bottom: 0;
+    border-radius: 0;
+  }
+}

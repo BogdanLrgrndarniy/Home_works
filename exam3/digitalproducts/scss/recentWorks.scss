@@ -1,0 +1,165 @@
+@mixin backGroundStyle {
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-size: cover;
+  }
+
+  .recentWorks{
+      height: 1000px;
+      background-image: url('/Home_works/exam3/digitalproducts/images/recentWorks/DeathtoStock_Wired3.png');
+      @include backGroundStyle();
+  }
+
+  .recentWorks__container{
+      max-width: 1170px;
+      margin: 0 auto;
+      height: 100%;
+      text-align: center;
+      padding-top: 50px;
+      color: white;
+  }
+
+  .recentWorks__Title{
+      font-size: 36px;
+      h2{
+          margin-top: 38px;
+      }
+  }
+
+  //slider
+  .recentWorks__slider{
+    padding-top: 70px;
+    margin: 0 auto;
+    position: relative;
+    .slider-Item{
+        img{
+            display: inline;
+        }
+    }
+    .arrow_prev{
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        &:hover{
+            cursor: pointer;
+            color: black;
+        }
+    }
+    .arrow_next{
+        font-size: 50px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        &:hover{
+            cursor: pointer;
+            color: black;
+        }
+    }
+    .my-dots {
+        position: absolute;
+        bottom: -45px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+      }
+      
+      .my-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+      }
+      
+      .my-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+      }
+      
+      .my-dots li button:hover,
+      .my-dots li button:focus {
+        outline: none;
+      }
+      
+      .my-dots li button:hover:before,
+      .my-dots li button:focus:before {
+        opacity: 1;
+      }
+      
+      .my-dots li button:before {
+        font-family: 'slick';
+        font-size: 6px;
+        line-height: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg');
+        text-align: center;
+        opacity: .25;
+        color: rgb(255, 255, 255);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        background-color: white;
+        border-radius: 50%;
+      }
+      
+      .my-dots li.slick-active button:before {
+        opacity: .75;
+        color: rgb(255, 251, 251);
+        
+      }
+      
+  }
+
+  ///////
+  $colors: (
+  slide: #8fc866, 
+);
+
+@each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 45deg)};
+    }
+  }
+  
+  .recentWorks__button{
+    button{
+        color: var(--color);
+        transition: 0.25s;
+        
+        &:hover,
+        &:focus { 
+          border-color: var(--hover);
+          color: #fff;
+        }
+        width: 193px;
+        height: 48px;
+        border: 1px solid white;
+        margin: 60px 0px 0px 0px;
+        background-color: transparent;
+        color: white;
+        font-size: 20px;
+
+        
+    }
+    .slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+  }
