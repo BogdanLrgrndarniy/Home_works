@@ -1,0 +1,180 @@
+@mixin backGroundStyle {
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-size: cover;
+}
+
+$TextaboutUs__Section-ItemSameStyle: #665F65;
+
+.aboutUS {
+  background-color: rgb(235, 235, 235);
+  @include backGroundStyle;
+  height: 1600px;
+}
+.aboutUs__container {
+  height: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.aboutUS__TopDescription {
+  height: 50%;
+  display:  flex;
+  justify-content: space-between;
+  padding: 125px 0px 0px 0px;
+}
+
+.about__usCardTransform {
+    flex: 1 1 auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  background-image: url("/Home_works/exam3/digitalproducts/images/aboutUs/DeathtoStock_Wired8.png");
+  max-width: 380px;
+  .about__usCardTransformIcon{
+      text-align: center;
+  }
+  .about__usCardTransformIcon.paddingTop{
+      padding: 75px 0px 0px 0px;
+  }
+  .about__usCardTransform-Text{
+      margin-top: 46px;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 36px;
+      color: white;
+      p{
+          text-align: center
+      };
+  }
+  .about__usCardTransform-Text.marginTop{
+      margin: 46px 0px 0px 0px;
+  }
+}
+
+.aboutUs__Text{
+    max-width: 635px;
+   font-size: 20px;
+   line-height:  auto;
+   :nth-child(1){
+    max-width: 600px;
+}
+    :nth-child(2){
+        margin: 35px 0px 0px 0px;
+    }
+}
+
+.aboutUs__Text.paddingTop{
+    padding: 76px 0px 0px 0px;
+}
+
+$cyan: #0505A9;
+$dark: #FFFFFF;
+$borderW: 2px;
+$colors: (
+    slide: #8fc866, 
+  );
+  
+  @each $button, $color in $colors {
+      .#{$button} {
+        --color: #{$color};
+        --hover: #{adjust-hue($color, 45deg)};
+      }
+    }
+.aboutUS__button{
+    button{
+        color: var(--color);
+        transition: 0.25s;
+        
+        &:hover,
+        &:focus { 
+          border-color: var(--hover);
+          color: #fff;
+        }
+    }
+    .slide:hover,
+.slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover);
+}
+    text-align: center;
+    .buttonAboutUs{
+        width: 30.39%;
+        border: 1px solid black;
+        height: 48px;
+        font-size: 20px;
+        // background: darken($red, 1.5%);
+  font-weight: 100;
+
+    }
+}
+
+.aboutUS__button.marginTop{
+   margin: 97px 0px 0px 0px;
+}
+
+.aboutUs__Section{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    grid-template-rows: 400px 400px;
+
+}
+
+.aboutUs__Section-Item{
+    transition-duration: 0.3s;
+   &:hover{
+       cursor: pointer;
+        box-shadow: inset 0 0 0 10px #53ea93;
+    }
+    .Icon{
+        text-align: center;
+    }
+    .Text{
+        text-align: center;
+        margin: 0 auto;
+        h2{
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        p{
+            font-size: 18px;
+        }
+    }
+}
+
+.aboutUs__Section-Item.sameStyle{
+    .Icon{
+        padding: 100px 0px 0px 0px;
+    }
+    .Text{
+        margin-top: 30px;
+        color: $TextaboutUs__Section-ItemSameStyle;
+        
+        p{
+            padding-top: 20px;
+            max-width: 200px;
+            margin: 0 auto;
+        }
+    }
+}
+
+.aboutUs__Section-Item.greyBackground{
+  background-color: #dbdbdd;
+}
+
+.aboutUs__Section-Item.ourServices{
+    grid-column: 3/3;
+    grid-row: 1/3;
+background-repeat: no-repeat;
+background-size: cover;
+ background-image: url('/Home_works/exam3/digitalproducts/images/aboutUs/unsplash_523ae1f5502d6_1.png');
+ .Icon{
+     padding-top: 120px;
+ }
+ .Text{
+     margin-top: 35px;
+     color: white;
+     max-width: 350px;
+    p{
+        padding: 120px 0px 0px 0px;
+     }
+ }
+}
