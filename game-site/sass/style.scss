@@ -100,7 +100,7 @@ $general-color: #FFC700;
                 display: inline-flex;
                 margin-top: 60px;
                 li {
-                    margin-left: 15px;
+                    margin-left: 45px;
                     :hover {
                         color: white;
                     }
@@ -245,21 +245,99 @@ main{
             }
         }
     }
+
+    .featured-Projects {
+        background-color: white;
+        max-width: 1200px;
+        min-height: 700px;
+        .featured-Projects__container {
+            .featured-Projects__nav{
+                max-width: 1040px;
+                margin-bottom: 30px;
+                .featured-Projects__Title {
+                    h2{
+                        font-family: 'MyriadPro-Semibold';
+                        font-size: 50px;
+                        span{
+                           font-size: 70px;
+                                color: $general-color;
+                             
+                        }
+                        :last-child{
+                            color: black;
+                        }
+                    }
+    
+                }
+                .featured-Projects__navigation{
+                    margin: 30px 0px 0px 0px;
+                    ul{
+                        display: inline-flex;
+                        li{
+                            margin-left: 30px;
+                           
+                            :hover {
+                                color: rgb(0, 0, 0);
+                            }
+                            font-size: 18px;
+                            display: inline-block;
+                            line-height: 1;
+                            text-decoration: none;
+                            cursor: pointer;
+                            position: relative;
+                            :after {
+                                display: block;
+                                content: "";
+                                background-color:#FFC700;
+                                height: 3px;
+                                width: 0%;
+                                left: 50%;
+                                margin-top: 3px;
+                                position: absolute;
+                                -webkit-transition: width .3s ease-in-out;
+                                -moz--transition: width .3s ease-in-out;
+                                transition: width .3s ease-in-out;
+                                -webkit-transform: translateX(-50%);
+                                -moz-transform: translateX(-50%);
+                                transform: translateX(-50%);
+                            }
+                            :hover:after, :focus:after{
+                                width: 50%;
+                            }
+                            a{
+                                color: black;
+                                font-size: 15px;
+                                font-family: 'MyriadPro-Semibold';
+                            }
+                        }
+                        :first-child{
+                            margin-left: 0px;
+                        }
+                        :nth-child(2){
+                            margin-left: 90px;
+                        }
+                    }
+                }
+            }
+            .featured-Projects__gridElements{
+                display: grid;
+                grid-template-columns: 300px 300px 300px 300px;
+                row-gap: 2px;
+            }
+        }
+    }
 }
 
-.header {
-}
-.headerContainer {
-}
-.header__topInformation {
-}
-.header__title {
-}
 
 
-.headerDescription__WhatWeDo {
+
+
+.featured-Projects__nav {
 }
 .nav {
 }
 .nav__link {
 }
+.featured-Projects__gridElements {
+}
+
